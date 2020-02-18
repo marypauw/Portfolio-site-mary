@@ -12,6 +12,9 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #212121;
 }
+/*
+Font styling
+*/
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -20,11 +23,19 @@ h1 {
   font-weight: 700;
 }
 
+#index-h1 { /*id selector*/
+  color: #0881A3
+}
+
 h2 {
   font-size: 2.87em;
   font-weight: 600;
   text-transform: uppercase;
-  text-transform: underline;
+  color: #1F4E5F
+}
+
+#footer-h2 { /*id selector*/
+  color: #0881A3
 }
 
 h3 {
@@ -36,12 +47,25 @@ h4 {
   font-weight: 600;
   text-transform: uppercase;
 }
+
+#en-text { /*id selector*/
+  color: #0881A3
+}
+/*
+Images styling
+*/
 img {
   width: 100%;
 }
+/*
+Links and buttons styling
+*/
 a {
   color: #1F4E5F;
   text-decoration: none; /* No underlining */
+}
+#navigation-link { /*id selector*/
+  color: #212121
 }
 a:visited { /* visited link */
   color: #0881A3;
@@ -82,6 +106,18 @@ a:active { /* selected link */
   border: 2px solid #212121;
 }
 .button.contact:hover {
+  background-color: #ffffff;
+  color: #212121 !important;
+  border: 2px solid #1F4E5F;
+  text-decoration: none;
+}
+.button.social {
+  background-color: transparent;
+  color: #212121 !important;
+  text-transform: uppercase;
+  border: 2px solid #212121;
+}
+.button.social:hover {
   background-color: #ffffff;
   color: #212121 !important;
   border: 2px solid #1F4E5F;
