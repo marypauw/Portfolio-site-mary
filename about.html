@@ -11,17 +11,17 @@
   </head>
   <body>
     <header>
-      <div> <!-- open header session -->
-        <img src="img/logo.svg" alt="Marialaurtallerini">
+      <div class="container"> <!-- open header container -->
+        <img src="img/logo.svg" alt="Marialaurtallerini" class="logo">
         <nav>
-          <ul> <!-- open unordered list -->
+          <ul class="navigation"> <!-- open unordered list -->
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About me</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="testimonials.html">Testimonials</a></li>
           </ul> <!-- close unordered list -->
         </nav>
-      </div> <!-- close header session -->
+      </div> <!-- close header container -->
     </header>
     <main>
 
@@ -40,12 +40,12 @@
         </div> <!-- close page head -->
       </div> <!-- close the row that contains page head -->
 
-      <div> <!-- open the row that contains skills -->
-        <div> <!-- open skills container -->
+      <div class=""> <!-- open the the section that contains skills -->
+        <div class="container"> <!-- open skills container -->
           <h2>Skills & Tools</h2>
 
-          <div> <!-- open row for (2) columns design+prototyping -->
-            <div> <!-- open left column -->
+          <div class="row"> <!-- open row for (2) columns design+prototyping-->
+            <div class="col skills"> <!-- open left column -->
               <h3>Design Tools</h3>
               <ul>
                 <li>Sketch</li>
@@ -54,7 +54,7 @@
                 <li>Adobe XD</li>
               </ul>
             </div> <!-- close left column -->
-            <div> <!-- open right column -->
+            <div class="col skills"> <!-- open right column -->
               <h3>Prototyping and Collaboration Tools</h3>
               <ul>
                 <li>Invision</li>
@@ -66,8 +66,8 @@
             </div> <!-- close right column -->
           </div> <!-- close row for (2) columns design+prototyping-->
 
-          <div> <!-- open row for (2) columns managment+Relevant -->
-            <div> <!-- open left column -->
+          <div class="row"> <!-- open row for (2) columns managment+Relevant -->
+            <div class="col skills"> <!-- open left column -->
               <h3>Project Management Tools</h3>
               <ul>
                 <li>Asana</li>
@@ -75,8 +75,8 @@
                 <li>Google Suite</li>
               </ul>
             </div> <!-- close left column -->
-            <div> <!-- open right column -->
-              <h3>Relevant skills</h3>
+            <div class="col skills"> <!-- open right column -->
+              <h3 >Relevant skills</h3>
               <ul>
                 <li>Empathetic</li>
                 <li>Open to changes</li>
@@ -87,10 +87,10 @@
           </div> <!-- close row for (2) columns managment+relevant -->
 
         </div> <!-- close skills container -->
-      </div> <!-- close the row that contains skills -->
+      </div> <!-- close the section that contains skills -->
 
-      <div> <!-- open the row that contains design process -->
-        <div> <!-- open design process container-->
+      <div class="row"> <!-- open the row that contains design process -->
+        <div class="container"> <!-- open design process container-->
           <h2>Design Process</h2>
           <p>
             If you would ever ask me, why do I like to be a UX designer I would reply because I want to be creative, for sure, but this is not the only reason. One of the most fashinating thing that I like of UX design is goign through a user-centered design process, being always ready to put my self in the users’ shoes and change my ideas and my designs when necessary. The goal is to create designs for the users, namely for people, and not for my self.
@@ -103,17 +103,18 @@
           <div> <!-- open UCD-->
 
             <div> <!-- open left arrow-->
-              <img src="img/aboutme/leftarrow.svg" alt="arrow">
+              <img src="img/aboutme/leftarrow.svg" alt="arrow" class="displaynone">
             </div> <!-- close left arrow-->
 
             <div> <!-- open middle column-->
 
               <div> <!-- open first row that contains (2) columns discovery-->
-                <div> <!-- open first column-->
-                  <img src="img/aboutme/discovery.svg" alt="discovery">
-                </div> <!-- close first column-->
-                <div> <!-- open second column-->
+                <div class="ucdphase"> <!-- open first column-->
+                  <img src="img/aboutme/discovery.svg" alt="discovery" class="ucdicon">
                   <h4>discovery</h4>
+                </div> <!-- close first column-->
+                <div class="ucdtask"> <!-- open second column-->
+                  <h4 class="displaynone">discovery</h4>
                   <ul> <!-- open unordered list -->
                     <li>Conducting competitor analysis</li>
                     <li>Conducting interviews and surveys</li>
@@ -123,11 +124,12 @@
               </div> <!-- close first row that contains (2) columns discovery-->
 
               <div> <!-- open second row that contains (2) columns concepting-->
-                <div> <!-- open first column-->
-                  <img src="img/aboutme/concepting.svg" alt="concepting">
-                </div> <!-- close first column-->
-                <div> <!-- open second column-->
+                <div class="ucdphase"> <!-- open first column-->
+                  <img src="img/aboutme/concepting.svg" alt="concepting" class="ucdicon">
                   <h4>concepting</h4>
+                </div> <!-- close first column-->
+                <div class="ucdtask"> <!-- open second column-->
+                  <h4 class="displaynone">concepting</h4>
                   <ul> <!-- open unordered list -->
                     <li>Creating screen-by-screen user flows</li>
                     <li>Coducting card sorting analysis</li>
@@ -137,11 +139,12 @@
               </div> <!-- close second row that contains (2) columns concepting-->
 
               <div> <!-- open third row that contains (2) columns prototyping-->
-                <div> <!-- open first column-->
-                  <img src="img/aboutme/prototyping.svg" alt="prototyping">
+                <div class="ucdphase"> <!-- open first column-->
+                  <img src="img/aboutme/prototyping.svg" alt="prototyping" class="ucdicon">
+                  <h4>prototying</h4>
                 </div> <!-- close first column-->
-                <div> <!-- open second column-->
-                  <h4>prototyping</h4>
+                <div class="ucdtask"> <!-- open second column-->
+                  <h4 class="displaynone">prototyping</h4>
                   <ul> <!-- open unordered list -->
                     <li>Creating low-fidelity and mid-fidelity wireframes</li>
                     <li>Develop the most important functions</li>
@@ -151,11 +154,12 @@
               </div> <!-- close third row that contains (2) columns prototyping-->
 
               <div> <!-- open fourth row that contains (2) columns testing-->
-                <div> <!-- open first column-->
-                  <img src="img/aboutme/testing.svg" alt="testing">
-                </div> <!-- close first column-->
-                <div> <!-- open second column-->
+                <div class="ucdphase"> <!-- open first column-->
+                  <img src="img/aboutme/testing.svg" alt="testing" class="ucdicon">
                   <h4>testing</h4>
+                </div> <!-- close first column-->
+                <div class="ucdtask"> <!-- open second column-->
+                  <h4 class="displaynone">testing</h4>
                   <ul> <!-- open unordered list -->
                     <li>Testing the prototype/s on potential users</li>
                     <li>Reviewing user data to decide if a new feature is successful</li>
@@ -165,14 +169,14 @@
                 </div> <!-- close second column-->
               </div> <!-- close fourth row that contains (2) columns testing-->
 
-              <div> <!-- open repeat-process-->
+              <div class="downloadcv"> <!-- open repeat-process-->
                 <h4>repeat process</h4>
               </div> <!-- open repeat-process-->
 
             </div> <!-- close middle column-->
 
             <div> <!-- open right arrow-->
-              <img src="img/aboutme/rightarrow.svg" alt="arrow">
+              <img src="img/aboutme/rightarrow.svg" alt="arrow" class="displaynone">
             </div> <!-- close right arrow-->
 
           </div> <!-- close UCD-->
@@ -180,39 +184,39 @@
         </div> <!-- close design process container-->
       </div> <!-- close the row that contains design process -->
 
-      <div> <!-- open the row that contains download button -->
-        <div> <!-- open download button -->
+      <div class="row"> <!-- open the row that contains download button -->
+        <div class="downloadcv"> <!-- open download button -->
           <a href="files/cv.pdf" download target="_blank" class="button">Download my CV</a>
         </div> <!-- close download button -->
       </div> <!-- close the row that contains download button -->
 
     </main>
     <footer id="contact">
-      <div> <!-- open row that contains (5) row -->
+      <div class="container"> <!-- open row that contains (5) row -->
         <h2>Get in touch</h2>
         <p>
-          Do you like my work and want to discuss opportunities? Please get in touch.
+          Do you like my work and want to discuss opportunities?<br>Please get in touch.
         </p>
-        <div> <!-- open row that contains email button -->
+        <div id="emailmebutton"> <!-- open row that contains email button -->
           <a href="mailto:marialauratallerini3@gmail.com" class="button secondary">Email me</a>
         </div> <!-- close row that contains email button -->
         <div> <!-- open row that contains contact image -->
-          <img src="img/homepage/contactpaperplane.png" alt="contact me">
+          <img src="img/homepage/contactpaperplane.png" alt="contact me" class="contacting">
         </div> <!-- close row that contains contact image -->
-        <div> <!-- open row that contains social buttons -->
+        <div class="social"> <!-- open row that contains social buttons -->
           <ul> <!-- open unordered list -->
             <li>
-              <a href="https://www.linkedin.com/in/marialaura-tallerini-5a0845161/" target="_blank" class="button secondary">
+              <a href="https://www.linkedin.com/in/marialaura-tallerini-5a0845161/" target="_blank">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.behance.net/marytallerini/projects" target="_blank" class="button secondary">
+              <a href="https://www.behance.net/marytallerini/projects" target="_blank">
                 <i class="fab fa-behance"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.youtube.com/channel/UC6TEuN2Usk9ktBJMbYOQJQQ?view_as=subscriber" target="_blank" class="button secondary">
+              <a href="https://www.youtube.com/channel/UC6TEuN2Usk9ktBJMbYOQJQQ?view_as=subscriber" target="_blank">
                 <i class="fab fa-youtube"></i>
               </a>
             </li>
