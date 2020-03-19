@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/281c94b7d1.js" crossorigin="anonymous"></script>
     <title>Marialaura Tallerini About me</title>
   </head>
-  <body>
+  <body id="about-page">
     <header>
       <div class="container"> <!-- open header container -->
         <img src="img/logo.svg" alt="Marialaurtallerini" class="logo">
@@ -25,28 +25,35 @@
     </header>
     <main>
 
-      <div> <!-- open the row that contains page head -->
-        <div class="container"> <!-- open page head -->
+      <div id="hero-about"> <!-- open the row that contains page head -->
+        <div class="container mobile"> <!-- open page head -->
           <h1>My name is Mary</h1>
-          <img src="img/aboutme/headerme_mobile.jpg" alt="mary">
+          <img src="img/aboutme/headerme_mobile.jpg" alt="mary" class="hero-about-mobile">
           <p>
             and I am a very curious and empathetic UX/UI Designer with a passion  for art, photography and digital innovation.
           </p>
           <p>
-            I have a background in conservation and restoration of artworks and project management and today I work in the digital industry as User Experience and Interface Designer. During my professional and student life, my attraction for the digital world brought me to e more and more interested in the experience of users related to a digital product and the aility to design not only the interface of it but the experience itself.
-          </p>
-          <p>
-            Coming from an artistic background I do think that creativity is a basic need for my career insight. The ability to continuously create and innovate gives great value to my personal and work-life.
+            My attraction for the digital world bring me everyday to  be more and more interested in the experience of users related to a digital product and the ability to design not only the interface of it but the experience itself.
           </p>
         </div> <!-- close page head -->
       </div> <!-- close the row that contains page head -->
+      <div> <!--open the row that contains description -->
+      <div class="container about"> <!-- open description continaer -->
+          <p>
+            I have a background in conservation and restoration of artworks and project management  and today I work in the digital industry as User Experience and Interface Designer.
+          </p>
+          <p>
+            Coming from an artistic background I do think that creativity is a basic need for my career insights. The ability to continuously create and innovate gives great value to my personal and work-life.
+          </p>
+        </div> <!-- open description continaer -->
+      </div> <!--close the row that contains description -->
 
-      <div class=""> <!-- open the the section that contains skills -->
+      <div> <!-- open the the section that contains skills -->
         <div class="container"> <!-- open skills container -->
           <h2>Skills & Tools</h2>
 
           <div class="row"> <!-- open row for (2) columns design+prototyping-->
-            <div class="col skills"> <!-- open left column -->
+            <div class="col-md-6 col skills"> <!-- open left column -->
               <h3>Design Tools</h3>
               <ul>
                 <li>Sketch</li>
@@ -55,7 +62,7 @@
                 <li>Adobe XD</li>
               </ul>
             </div> <!-- close left column -->
-            <div class="col skills"> <!-- open right column -->
+            <div class="col-md-6 col skills"> <!-- open right column -->
               <h3>Prototyping and Collaboration Tools</h3>
               <ul>
                 <li>Invision</li>
@@ -68,7 +75,7 @@
           </div> <!-- close row for (2) columns design+prototyping-->
 
           <div class="row"> <!-- open row for (2) columns managment+Relevant -->
-            <div class="col skills"> <!-- open left column -->
+            <div class="col-md-6 col skills"> <!-- open left column -->
               <h3>Project Management Tools</h3>
               <ul>
                 <li>Asana</li>
@@ -76,7 +83,7 @@
                 <li>Google Suite</li>
               </ul>
             </div> <!-- close left column -->
-            <div class="col skills"> <!-- open right column -->
+            <div class="col-md-6 col skills"> <!-- open right column -->
               <h3 >Relevant skills</h3>
               <ul>
                 <li>Empathetic</li>
@@ -101,10 +108,10 @@
           </p>
           <h3>User centred design process</h3>
 
-          <div> <!-- open UCD-->
+          <div id="ucd"> <!-- open UCD-->
 
-            <div> <!-- open left arrow-->
-              <img src="img/aboutme/leftarrow.svg" alt="arrow" class="displaynone">
+            <div class="arrow"> <!-- open left arrow-->
+              <img src="img/aboutme/leftarrow.svg" alt="arrow" class="about-arrow">
             </div> <!-- close left arrow-->
 
             <div> <!-- open middle column-->
@@ -176,8 +183,8 @@
 
             </div> <!-- close middle column-->
 
-            <div> <!-- open right arrow-->
-              <img src="img/aboutme/rightarrow.svg" alt="arrow" class="displaynone">
+            <div class="arrow"> <!-- open right arrow-->
+              <img src="img/aboutme/rightarrow.svg" alt="arrow" class="about-arrow">
             </div> <!-- close right arrow-->
 
           </div> <!-- close UCD-->

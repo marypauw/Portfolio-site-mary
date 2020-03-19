@@ -11,6 +11,11 @@ Black Color: #212121
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 /* General styling */
 * {
   box-sizing: border-box;
@@ -24,7 +29,10 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #212121;
 }
-
+.container.mobile > h1{
+  text-align: center;
+  padding-top: 10px;
+}
 /*
 Font styling
 */
@@ -86,8 +94,8 @@ a:active { /* selected link */
   text-transform: uppercase;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #1F4E5F; /* width of the border, type, color */
-  transition: 0.2s;
+  border: 2px solid #1F4E5F;
+  transition: 0.2s opacity;
 }
 .button:visited {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -95,9 +103,7 @@ a:active { /* selected link */
   color: #ffffff !important; /* needed to override the default link color */
   font-weight: 600;
   text-transform: uppercase;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #1F4E5F; /* width of the border, type, color */
+  padding: 10px;/* width of the border, type, color */
   transition: 0.2s;
 }
 .button:hover {
@@ -125,7 +131,6 @@ a:active { /* selected link */
   border: 2px solid #1F4E5F;
   text-decoration: none!important;
 }
-
 /*
 Header
 */
@@ -246,16 +251,49 @@ Index page
   padding-bottom: 25px;
   border-bottom: 3px solid #f2f8fa;
 }
+#work .row:last-child {
+  padding-bottom: 25px;
+  border-bottom: none;
+}
 #arrowforward{
   margin-left: 10px;
   max-width: 33px;
 }
 .drac {
-  display: inline-block;
+  text-align: center;
 }
 .draccover {
-  text-align: center;
   max-width: 160px;
+}
+/*
+Animation
+*/
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+@keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+}
+.sun {
+  animation: 4s color-change infinite alternate linear;
 }
 /*
 About page
@@ -297,17 +335,19 @@ About page
   padding: 0 15px;
   text-align: center;
 }
+.about-arrow {
+  display: none;
+}
 /*
 Testimonials
 */
 .row.testimonials {
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   border-bottom: 5px solid #f2f8fa;
 }
 .row.testimonials:last-child {
   padding-bottom: 25px;
   border-bottom: none;
-  color: #0881A3 !important;
 }
 .testimonials .t2 {
   color: #0881A3;
@@ -321,9 +361,15 @@ Testimonials
 /*
 7 seas work page
 */
-#hero7seas {
-  background-image: url(".../img/7seas/header");
-  background-size: cover;
+#hero7seas .container.mobile {
+  background-image: url("../img/7seas/mobile_hero.jpg");
+  height: 242px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire */
+}
+#hero7seas .container.mobile > h1 {
+  color: #ffffff;
 }
 .infobox {
   border-bottom: 5px solid #f2f8fa;
@@ -365,24 +411,28 @@ Testimonials
   font-weight: 600 !important;
   margin-bottom: 15px;
 }
-.row.workpage {
-  margin: 30px 0 !important; /* 30px top and bottom, 0 left and right */
+.workpage {
+  margin-top: 0px; /* 30px top and bottom, 0 left and right */
+  padding-top: 20px;
 }
-.row.workpage > div > span {
+.workpage > div > span {
   font-size: 1.62em;
   font-weight: 600;
   color: #1F4E5F;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.row.workpage > div > h3 {
+.workpage > div > h3 {
   color: #212121 !important;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: -bottom: 10px;
 }
 .imgcolumn > div {
   display: inline-block;
   margin: auto;
+}
+.screen-title-md {
+  display: none;
 }
 .img {
   text-align: center;
@@ -391,6 +441,9 @@ Testimonials
   max-width: 260px;
   margin-top: 15px;
 }
+.workpage-img.prot {
+  display: none;
+}
 .screens {
   text-align: center;
   -webkit-filter: drop-shadow(2px 2px 5px #d9d9d9);
@@ -398,13 +451,45 @@ Testimonials
   max-width: 60px;
   margin: 0 4px;
 }
+.testrow {
+  margin: 15px 0; /* 25px top and bottom, 0 left and right */
+  text-align: center;
+}
 .prototyperow {
   margin: 15px 0; /* 25px top and bottom, 0 left and right */
   text-align: center;
 }
+.scrollmenu {
+overflow: auto;
+white-space: nowrap;
+}
+.scrollmenu > div {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+.phases {
+  border-bottom: 2px solid #1F4E5F;
+  margin-bottom: 10px;
+}
+.projectphases {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0px;
+  text-decoration: none;
+}
 /*
 DRAC work page
 */
+#herodrac .container.mobile {
+  background-image: url("../img/drac/mobile_hero.jpg");
+  height: 242px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire */
+}
 .imgcolumndrac {
   text-align: center;
 }
@@ -433,6 +518,346 @@ DRAC work page
 }
 .coloredbg {
   background-color: #f2f8fa;
-  width: 100%;
-  margin: 0 0 !important;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 10px 15px;
+}
+/* ==============================
+Small devices (640px or larger)
+================================= */
+@media only screen and (min-width: 620px) {
+  /*
+  work page
+  */
+
+}
+/* ==============================
+Medium devices (768px or larger)
+================================= */
+@media (min-width: 768px) {
+  header {
+      text-align: unset;
+      padding: 20px 0 13px;
+    }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  [class*="col-"] {
+  float: left;
+  padding: 10px;
+  }
+  .col-md-6 {
+  width: 50%;
+  }
+  /*
+  Main
+  */
+  main {
+    padding-top: 70px;
+  }
+  /*
+  About page
+  */
+  #about-page h3 {
+    margin-top: 0;
+  }
+  #hero-about {
+    background-image: url("../img/aboutme/headerme_desktop_md.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+  }
+  .hero-about-mobile {
+    display: none;
+  }
+  #hero-about h1 {
+    color: #ffffff;
+    text-align: left;
+  }
+  #hero-about p {
+    color: #ffffff;
+    text-align: left;
+    max-width: 500px;
+    padding: 10px;
+  }
+  .about-arrow {
+    display: block !important;
+    max-height: 130px;
+    max-width: 130px;
+  }
+  .downloadcv {
+    display: none;
+  }
+  #ucd {
+    display: flex;
+    justify-content: center;
+  }
+  .arrow {
+    align-self: center;
+    padding: 50px;
+  }
+  /*
+  7seas work page
+  */
+  #hero7seas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/7seas/header.jpg");
+    height: 375px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire */
+  }
+  #hero7seas p {
+    color: #ffffff;
+  }
+  #hero7seas h1 {
+    padding-top: 0px;
+    margin-top: 50px;
+  }
+  #hero7seas .container.mobile {
+    background-image:none;
+    max-height: 100px;
+  }
+  .workpage > div {
+    display: block;
+  }
+  .workpage > div > span {
+    float: left;
+    display: inline-block;
+    font-size: 35px !important;
+  }
+  .workpage > div > h3 {
+    display: inline-block;
+    margin: 0px 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+  }
+  .workpage > div > p {
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 55px;
+  }
+  .workpage-img {
+    max-width: 375px;
+  }
+  .img {
+    max-width: 600px;
+  }
+  .finalrow {
+    text-align:center;
+  }
+  .img.workpage-img {
+    max-width: 300px;
+  }
+  .workpage-img.prot {
+    display: inline-block;
+  }
+  .screens {
+    max-width: 110px;
+  }
+  .screen-title-md-rg {
+    display: inline;
+    padding-left: 20px;
+  }
+  .screen-title-md-lf {
+    display: inline;
+    padding-right: 20px;
+  }
+  .screen-title-md > h4 {
+    margin: 0px 0px;
+    text-align: center;
+  }
+  .screen-title-sm {
+    display: none;
+  }
+  .imgcolumn {
+    margin: 20px;
+  }
+  /*
+  drac work page
+  */
+  .infobox > ul > li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items:center;
+  }
+  .infobox > ul > li > span {
+  margin: 10px 10px;
+  }
+  .infobox > ul > li > p {
+  margin: 10px 10px;
+  }
+  #herodrac {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/drac/header_md.jpg");
+    height: 330px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire */
+  }
+  #herodrac .container.mobile {
+    background-image:none;
+  }
+  #herodrac h1 {
+    padding-top: 0px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    color: #ffffff;
+  }
+  #herodrac p {
+    color: #ffffff;
+  }
+  .imgcolumn.drac {
+  text-align: center;
+  }
+  .imgcolumn {
+  text-align: center;
+  }
+  .workpage.coloredbg.finaldrac {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  }
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  [class*="col-"] {
+  float: left;
+  padding: 10px;
+  }
+  .col-lg-7 {
+  width: 58.33%;
+  }
+  .col-lg-5 {
+  width: 41.66%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*
+  index page
+  */
+  .drac {
+    text-align: center;
+  }
+  .draccover {
+    max-width: 280px;
+  }
+  /*
+  about page
+  */
+  #hero-about {
+    background-image: url("../img/aboutme/headerme_desktop_lg.jpg");
+    background-size: cover;
+  }
+  .hero-about-mobile {
+    display: none;
+  }
+  #hero-about p {
+    max-width: 600px;
+  }
+  .about-arrow {
+    display: block !important;
+    max-height: 200px;
+    max-width: 200px;
+  }
+  .container.about > p {
+    max-width: 800px;
+  }
+  /*
+  testimonial page
+  */
+  .column.t1 {
+  max-width: 500px;
+  padding-right: 30px;
+  }
+  .column.t2 {
+  max-width: 470px;
+  }
+  /*
+  7seas workpage
+  */
+  #hero7seas div {
+  max-width: 850px;
+  text-align: center;
+  }
+  #hero7seas .container.mobile {
+    background-image:none;
+  }
+  .workpage-img {
+    max-width: 500px;
+  }
+  .screens {
+    max-width: 135px;
+  }
+  .img {
+    max-width: 800px;
+  }
+  .workpage.screen-row {
+    text-align: center;
+  }
+  .workpage > div > p {
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 55px;
+    max-width: 900px;
+  }
+  /*
+  drac work page
+  */
+  #herodrac {
+    height: 290px;
+  }
+  #herodrac div {
+  max-width: 850px;
+  text-align: center;
+  }
+  .scrollmenu.dracscroll {
+  text-align: center;
+  }
+  .workpage.coloredbg.finaldrac {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  }
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  body {
+    font-size: 18px; /* Sets the font size to 18px */
+  }
+  /*
+  about page
+  */
+  #hero-about {
+    background-image: url("../img/aboutme/headerme_desktop_xl.jpg");
+    background-size: cover;
+  }
+  .hero-about-mobile {
+    display: none;
+  }
+  /*
+  drac work page
+  */
+  .screens.drac {
+    max-width: 200px;
+  }
 }
