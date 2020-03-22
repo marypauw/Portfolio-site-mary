@@ -5,6 +5,7 @@ Secondary Color (Dark): #1F4E5F;
 Black Color: #212121
 */
 /* Layout styling */
+
 .container {
   padding: 0 15px;
 }
@@ -96,6 +97,8 @@ a:active { /* selected link */
   border-radius: 3px;
   border: 2px solid #1F4E5F;
   transition: 0.2s opacity;
+  width: 100%;
+  max-width: 270px;
 }
 .button:visited {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -118,6 +121,8 @@ a:active { /* selected link */
   text-transform: uppercase;
   border: 2px solid #212121;
   padding: 10px 10px;
+  width: 100%;
+  max-width: 270px;
 }
 .button.secondary:visited {
   background-color: transparent;
@@ -302,11 +307,17 @@ About page
   margin-top: 0px;
   margin-bottom: 20px;
 }
+.col.skills {
+padding-left: 0px;
+padding-right: 20px;
+}
 .col.skills > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  background-color: #f2f8fa;
+  background: linear-gradient(90deg, #ffffff 20%, #f2f8fa 20%, #f2f8fa 40%);
+  max-width: 250px;
+  min-height: 140px;
 }
 .displaynone {
   display: none;
@@ -341,6 +352,13 @@ About page
 /*
 Testimonials
 */
+.main-testimonials {
+  padding-top: 144px;
+}
+.testimonials-h1 > h1 {
+  margin: 0px 0px;
+  padding-top: 20px;
+}
 .row.testimonials {
   padding-bottom: 20px;
   border-bottom: 5px solid #f2f8fa;
@@ -353,7 +371,7 @@ Testimonials
   color: #0881A3;
 }
 .testimonials .column {
-  padding: 10px 0;
+  padding: 10px 0px;
 }
 .italic {
   font-style : italic;
@@ -363,13 +381,13 @@ Testimonials
 */
 #hero7seas .container.mobile {
   background-image: url("../img/7seas/mobile_hero.jpg");
-  height: 242px; /* You must set a specified height */
   background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire */
 }
 #hero7seas .container.mobile > h1 {
   color: #ffffff;
+  margin: 0px 0px;
+  padding: 15px 0 6.5em 0;
 }
 .infobox {
   border-bottom: 5px solid #f2f8fa;
@@ -385,9 +403,7 @@ Testimonials
 .infobox > ul > li > span {
   color: #0881A3;
   font-weight: 600;
-  margin-right: 5px;
-  margin: 16px 0;
-  margin-right: 10px !important;
+  margin: 16px 10px 16px 0px;
 }
 .infobox > ul > li > p {
   margin-top: 5px;
@@ -411,9 +427,16 @@ Testimonials
   font-weight: 600 !important;
   margin-bottom: 15px;
 }
+.product .row {
+  margin: 0px -15px;
+}
 .workpage {
   margin-top: 0px; /* 30px top and bottom, 0 left and right */
+  margin-bottom: 0px;
+  margin-left: -15px;
+  margin-right: -15px;
   padding-top: 20px;
+  padding: 10px 15px;
 }
 .workpage > div > span {
   font-size: 1.62em;
@@ -424,14 +447,16 @@ Testimonials
 }
 .workpage > div > h3 {
   color: #212121 !important;
-  padding-top: 5px;
-  padding-bottom: -bottom: 10px;
+  margin: 10px 0px 10px;
 }
 .imgcolumn > div {
   display: inline-block;
   margin: auto;
 }
-.screen-title-md {
+.screen-title-md-lf > h4 {
+  display: none;
+}
+.screen-title-md-rg > h4 {
   display: none;
 }
 .img {
@@ -449,7 +474,7 @@ Testimonials
   -webkit-filter: drop-shadow(2px 2px 5px #d9d9d9);
   filter: drop-shadow(2px 2px 5px #d9d9d9);
   max-width: 60px;
-  margin: 0 4px;
+  margin: 0 3px;
 }
 .testrow {
   margin: 15px 0; /* 25px top and bottom, 0 left and right */
@@ -483,12 +508,28 @@ white-space: nowrap;
 /*
 DRAC work page
 */
+.infobox > ul > li {
+display: flex;
+flex-direction: row;
+align-items:center;
+}
+.infobox > ul > li > span {
+margin-left: 0px;
+margin-bottom: 10px;
+margin-top: 10px;
+min-width: 70px;
+}
+.infobox > ul > li > p {
+margin: 10px 10px 10px;
+}
 #herodrac .container.mobile {
   background-image: url("../img/drac/mobile_hero.jpg");
-  height: 242px; /* You must set a specified height */
   background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire */
+}
+#herodrac .container.mobile > h1 {
+margin: 0px 0px;
+padding: 15px 0 6.5em 0;
 }
 .imgcolumndrac {
   text-align: center;
@@ -518,18 +559,15 @@ DRAC work page
 }
 .coloredbg {
   background-color: #f2f8fa;
-  margin-left: -15px;
-  margin-right: -15px;
-  padding: 10px 15px;
+  margin-bottom: 0px;
 }
 /* ==============================
-Small devices (640px or larger)
+Small devices (620px or larger)
 ================================= */
 @media only screen and (min-width: 620px) {
   /*
   work page
   */
-
 }
 /* ==============================
 Medium devices (768px or larger)
@@ -558,16 +596,25 @@ Medium devices (768px or larger)
     padding-top: 70px;
   }
   /*
+  testimonal
+  */
+  .main-testimonials {
+    padding-top: 100px;
+  }
+  /*
   About page
   */
   #about-page h3 {
     margin-top: 0;
+    margin-bottom: 10px;
+    min-height: 60px;
   }
   #hero-about {
-    background-image: url("../img/aboutme/headerme_desktop_md.jpg");
+    background-image: url("../img/aboutme/headerme_desktop_lg.jpg");
     background-size: cover;
     background-position: center;
-    padding: 5px;
+    padding: -5px;
+    padding-left: 0px;
   }
   .hero-about-mobile {
     display: none;
@@ -575,12 +622,16 @@ Medium devices (768px or larger)
   #hero-about h1 {
     color: #ffffff;
     text-align: left;
+    padding-top: 30px;
   }
   #hero-about p {
     color: #ffffff;
     text-align: left;
     max-width: 500px;
-    padding: 10px;
+    padding: 0px 0px 30px 0px;
+  }
+  .row-about {
+    padding-top: 5px;
   }
   .about-arrow {
     display: block !important;
@@ -606,7 +657,6 @@ Medium devices (768px or larger)
     flex-direction: column;
     align-items: center;
     background-image: url("../img/7seas/header.jpg");
-    height: 375px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire */
@@ -614,13 +664,17 @@ Medium devices (768px or larger)
   #hero7seas p {
     color: #ffffff;
   }
-  #hero7seas h1 {
-    padding-top: 0px;
-    margin-top: 50px;
+  #hero7seas .container.mobile > h1 {
+    padding: 40px 0px 10px 0px;
   }
   #hero7seas .container.mobile {
     background-image:none;
     max-height: 100px;
+  }
+  .workpage:after {
+    content: "";
+    clear: both;
+    display: table;
   }
   .workpage > div {
     display: block;
@@ -638,7 +692,7 @@ Medium devices (768px or larger)
     padding-left: 15px;
   }
   .workpage > div > p {
-    margin-top: 20px;
+    margin-top: 0px;
     text-align: left;
     padding-left: 55px;
   }
@@ -660,11 +714,11 @@ Medium devices (768px or larger)
   .screens {
     max-width: 110px;
   }
-  .screen-title-md-rg {
+  .screen-title-md-rg > h4 {
     display: inline;
     padding-left: 20px;
   }
-  .screen-title-md-lf {
+  .screen-title-md-lf > h4 {
     display: inline;
     padding-right: 20px;
   }
@@ -674,9 +728,6 @@ Medium devices (768px or larger)
   }
   .screen-title-sm {
     display: none;
-  }
-  .imgcolumn {
-    margin: 20px;
   }
   /*
   drac work page
@@ -689,6 +740,7 @@ Medium devices (768px or larger)
   }
   .infobox > ul > li > span {
   margin: 10px 10px;
+  min-width: 100px;
   }
   .infobox > ul > li > p {
   margin: 10px 10px;
@@ -698,7 +750,6 @@ Medium devices (768px or larger)
     flex-direction: column;
     align-items: center;
     background-image: url("../img/drac/header_md.jpg");
-    height: 330px;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire */
@@ -706,10 +757,8 @@ Medium devices (768px or larger)
   #herodrac .container.mobile {
     background-image:none;
   }
-  #herodrac h1 {
-    padding-top: 0px;
-    margin-top: 40px;
-    margin-bottom: 0px;
+  #herodrac .container.mobile > h1 {
+    padding: 40px 0px 10px 0px;
     color: #ffffff;
   }
   #herodrac p {
@@ -719,7 +768,9 @@ Medium devices (768px or larger)
   text-align: center;
   }
   .imgcolumn {
-  text-align: center;
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
   }
   .workpage.coloredbg.finaldrac {
   display: flex;
@@ -728,11 +779,17 @@ Medium devices (768px or larger)
   justify-content: space-between;
   align-items: center;
   }
+  .screens.drac {
+  margin: 15px !important;
+  }
 }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  body {
+    font-size: 18px; /* Sets the font size to 18px */
+  }
   [class*="col-"] {
   float: left;
   padding: 10px;
@@ -760,9 +817,15 @@ Large devices (1024px or larger)
   /*
   about page
   */
+  #about-page h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    min-height: 30px;
+  }
   #hero-about {
     background-image: url("../img/aboutme/headerme_desktop_lg.jpg");
     background-size: cover;
+    padding: 10px;
   }
   .hero-about-mobile {
     display: none;
@@ -782,11 +845,11 @@ Large devices (1024px or larger)
   testimonial page
   */
   .column.t1 {
-  max-width: 500px;
-  padding-right: 30px;
+  max-width: 600px;
+  padding-right: 50px;
   }
   .column.t2 {
-  max-width: 470px;
+  max-width: 600px;
   }
   /*
   7seas workpage
@@ -811,7 +874,7 @@ Large devices (1024px or larger)
     text-align: center;
   }
   .workpage > div > p {
-    margin-top: 20px;
+    margin-top: 0px;
     text-align: left;
     padding-left: 55px;
     max-width: 900px;
@@ -819,12 +882,10 @@ Large devices (1024px or larger)
   /*
   drac work page
   */
-  #herodrac {
-    height: 290px;
-  }
   #herodrac div {
   max-width: 850px;
   text-align: center;
+  padding-bottom: 20px;
   }
   .scrollmenu.dracscroll {
   text-align: center;
@@ -841,23 +902,24 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-  body {
-    font-size: 18px; /* Sets the font size to 18px */
-  }
   /*
   about page
   */
   #hero-about {
     background-image: url("../img/aboutme/headerme_desktop_xl.jpg");
     background-size: cover;
+    padding: 50px;
   }
   .hero-about-mobile {
     display: none;
   }
+  .row-about {
+    padding-top: 10px;
+  }
   /*
   drac work page
   */
-  .screens.drac {
+  .screens-drac {
     max-width: 200px;
   }
 }
