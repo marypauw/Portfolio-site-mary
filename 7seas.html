@@ -11,18 +11,24 @@
   </head>
   <body class="product">
     <header>
-      <div class="container"> <!-- open header container -->
-        <img src="img/logo.svg" alt="Marialaurtallerini" class="logo">
-        <nav>
-          <ul class="navigation"> <!-- open unordered list -->
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About me</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-          </ul> <!-- close unordered list -->
-        </nav>
-      </div> <!-- close header container -->
-    </header>
+
+      <header>
+        <div class="container"> <!-- open header container -->
+          <div class="navtoggle" id="myNavtoggle">
+            <img src="img/logo.svg" alt="Marialaurtallerini" class="logo">
+            <nav>
+              <ul class="navigation"> <!-- open unordered list -->
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+              </ul> <!-- close unordered list -->
+            </nav>
+          </div>
+        </div> <!-- close header container -->
+      </header>
+
     <main>
       <div id="hero7seas"> <!-- open section that contatins the page head-->
         <div class="container mobile"> <!-- open container (page head) -->
@@ -590,5 +596,8 @@
         <p>copyright MarilauraTallerini 2020</p>
       </div> <!-- open row that contains (5) row -->
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

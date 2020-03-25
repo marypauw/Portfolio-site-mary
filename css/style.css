@@ -142,20 +142,16 @@ Header
 header {
   background-color: #ffffff;
   font-size: 0.75em;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   position: fixed;
   z-index: 99999;
   box-shadow: 2px 2px 20px 0px rgba(180, 180, 180, 0.5);
   width: 100%;
 }
-nav {
-  display:inline-block;
-  width: 100%;
-}
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 nav > ul > li {
   display: inline-block;
@@ -177,6 +173,37 @@ nav > ul > li > a:active {
   color: #0881A3 !important;
   text-decoration: none;
 }
+.navtoggle li:not(:last-child) {
+display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle.responsive nav {
+  padding: 0;
+  text-align: right;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  text-align: right;
+}
+.navtoggle.responsive a  {
+  padding: 0;
+}
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 .logo {
   max-width: 150px;
 }
@@ -184,7 +211,7 @@ nav > ul > li > a:active {
 Main
 */
 main {
-  padding-top: 125px;
+  padding-top: 96px;
 }
 /*
 Footer
@@ -574,13 +601,26 @@ Medium devices (768px or larger)
 ================================= */
 @media (min-width: 768px) {
   header {
-      text-align: unset;
-      padding: 20px 0 13px;
-    }
+    display: block;
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
   nav {
+    display:inline-block;
+    text-align: right;
+    min-width: 500px;
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+  nav > ul {
+    margin: 1em 0;
+  }
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+  }
+  .navtoggle li:last-child {
+  display: none;
   }
   [class*="col-"] {
   float: left;

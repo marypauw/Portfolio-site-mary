@@ -9,20 +9,25 @@
     <script src="https://kit.fontawesome.com/281c94b7d1.js" crossorigin="anonymous"></script>
     <title>Marialaura Tallerini DRAC Project</title>
   </head>
-  <body>
+  <body class="product">
+
     <header>
       <div class="container"> <!-- open header container -->
-        <img src="img/logo.svg" alt="Marialaurtallerini" class="logo">
-        <nav>
-          <ul class="navigation"> <!-- open unordered list -->
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About me</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-          </ul> <!-- close unordered list -->
-        </nav>
+        <div class="navtoggle" id="myNavtoggle">
+          <img src="img/logo.svg" alt="Marialaurtallerini" class="logo">
+          <nav>
+            <ul class="navigation"> <!-- open unordered list -->
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About me</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li><a href="testimonials.html">Testimonials</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+            </ul> <!-- close unordered list -->
+          </nav>
+        </div>
       </div> <!-- close header container -->
     </header>
+
     <main>
       <div id="herodrac"> <!-- open section that contatins the page head-->
         <div class="container mobile"> <!-- open container (page head) -->
@@ -152,7 +157,7 @@
           <h2 id="discover">Discover</h2>
 
           <div class="row workpage coloredbg"> <!-- open 01 row (the problem text)-->
-            <div id="theproblem"> <!-- open cloumn 1 -->
+            <div> <!-- open cloumn 1 -->
               <span>01</span>
             </div> <!-- close cloumn 1 -->
             <div> <!-- open cloumn 2 -->
@@ -400,5 +405,8 @@
         <p>copyright MarilauraTallerini 2020</p>
       </div> <!-- open row that contains (5) row -->
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
