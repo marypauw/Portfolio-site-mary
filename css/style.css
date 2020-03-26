@@ -342,9 +342,26 @@ padding-right: 20px;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  background: linear-gradient(90deg, #ffffff 20%, #f2f8fa 20%, #f2f8fa 40%);
   max-width: 250px;
   min-height: 140px;
+}
+.skills {
+position:relative;
+}
+.bg {
+position: absolute;
+background: #f2f8fa;
+width: 200px;
+height: 150px;
+z-index: -1;
+}
+.bg-1 {
+top: 80px;
+left: 50px;
+}
+.bg-2 {
+top: 80px;
+left: 60px;
 }
 .displaynone {
   display: none;
@@ -410,11 +427,13 @@ Testimonials
   background-image: url("../img/7seas/mobile_hero.jpg");
   background-position: center; /* Center the image */
   background-size: cover; /* Resize the background image to cover the entire */
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 #hero7seas .container.mobile > h1 {
   color: #ffffff;
   margin: 0px 0px;
-  padding: 15px 0 6.5em 0;
+  padding: 0 0 6.5em 0;
 }
 .infobox {
   border-bottom: 5px solid #f2f8fa;
@@ -700,12 +719,13 @@ Medium devices (768px or larger)
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire */
+    padding-bottom: 20px;
   }
   #hero7seas p {
     color: #ffffff;
   }
   #hero7seas .container.mobile > h1 {
-    padding: 40px 0px 10px 0px;
+    padding: 20px 0px 10px 0px;
   }
   #hero7seas .container.mobile {
     background-image:none;
