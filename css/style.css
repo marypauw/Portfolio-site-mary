@@ -172,6 +172,7 @@ nav > ul > li > a:hover, a:focus {
 nav > ul > li > a:active {
   color: #0881A3 !important;
   text-decoration: none;
+  display: inline-block;
 }
 .navtoggle li:not(:last-child) {
 display: none;
@@ -640,6 +641,9 @@ Medium devices (768px or larger)
   }
   .navtoggle li:last-child {
   display: none;
+  }
+  .navtoggle.responsive a {
+  padding: 0 15px;
   }
   [class*="col-"] {
   float: left;
