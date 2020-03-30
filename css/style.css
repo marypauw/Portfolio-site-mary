@@ -469,22 +469,20 @@ Testimonials
   border-radius: 3px;
   border: 1px solid #0881A3;
 }
-.projectphases > div :hover {
-  margin-top: 30px;
-  margin-bottom: 15px;
+.projectphases > div > a:hover {
+  color: #ffffff !important;
   background-color: #0881A3;
-}
-.projectphases > div > a :hover {
-  text-decoration-color: #ffffff !important;
+  text-decoration: none;
 }
 .projectphaseslink > a {
   text-transform: uppercase !important;
   font-weight: 600 !important;
   margin-bottom: 15px;
 }
-.projectphaseslink > a :hover {
+.projectphaseslink > a:hover {
   color: #ffffff;
   background-color: #0881A3;
+  text-decoration: none;
 }
 
 .product .row {
@@ -571,15 +569,13 @@ white-space: nowrap;
   bottom: 20px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
+  border: 2px solid #0881A3; /* Remove borders */
   outline: none; /* Remove outline */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 2px; /* Rounded corners */
-  border-color: #0881A3;
-  borders: 2px;
-  background-color: transparent;
-  padding: 15px 15px;
+  background-color: rgba(255,255,255,0.8);
+  padding: 10px 15px;
   max-width: 50px;
 }
 
@@ -588,7 +584,13 @@ white-space: nowrap;
 }
 
 .arrowtop {
-  max-height: 30px;
+  max-height: 25px;
+}
+.section1 {
+  margin: -96px 0 0 0;
+}
+#theproblem {
+  margin: 96px 0 0 0;
 }
 /*
 DRAC work page
