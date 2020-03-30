@@ -15,7 +15,9 @@
     <header>
       <div class="container"> <!-- open header container -->
         <div class="navtoggle" id="myNavtoggle">
-          <img src="img/logo.svg" alt="Marialaurtallerini" class="logo">
+          <a href="index.html">
+            <img src="img/logo.svg" alt="Marialaurtallerini" class="logo">
+          </a>
           <nav>
             <ul class="navigation"> <!-- open unordered list -->
               <li><a href="index.html">Work</a></li>
@@ -46,40 +48,49 @@
         <div> <!-- open row that olds projects -->
           <h2>Projects</h2>
 
+
           <div class="row"> <!-- open row that holds (2)columns for project 7seas -->
             <div class="col-md-6 col-lg-7"> <!-- open first column (used for image) -->
-              <picture>
-                <source srcset="img/homepage/7seascovermobile.png" media="(max-width:767px)">
-                <img src="img/homepage/7seascoverdesktop.png" alt="My Image">
-              </picture>
+              <a href="7seas.html">
+                <picture>
+                  <source srcset="img/homepage/7seascovermobile.png" media="(max-width:767px)">
+                  <img src="img/homepage/7seascoverdesktop.png" alt="My Image">
+                </picture>
+              </a>
             </div> <!-- end of the first column -->
             <div class="col-md-6 col-lg-5"> <!-- open second column (used for text) -->
-              <h3>7 Seas</h3>
+              <a href="7seas.html">
+                <h3>7Seas</h3>
+              </a>
               <p>
                 Responsive weather website dedicated to all water sports enthusiasts,who want to plan a day on the water in a wise and safe way.
               </p>
               <a href="7seas.html">
                 Read more
-                <img src="img/homepage/arrow.svg" id="arrowforward">
+                <img src="img/homepage/arrow.svg" id="arrowforward" alt="arrowforward">
               </a>
             </div> <!-- end of the second column -->
           </div> <!-- end section that holds (2) column project 7seas -->
 
           <div class="row"> <!-- open row that olds (2)columns for project drac -->
             <div class="col-md-6 col-lg-7 drac" > <!-- open first column (used for image) -->
-              <picture>
-                <source srcset="img/homepage/draccovermobile.png" media="(max-width:767px)">
-                <img src="img/homepage/draccoverdesktop.png" class="draccover" alt="My Image">
-              </picture>
+              <a href="drac.html">
+                <picture>
+                  <source srcset="img/homepage/draccovermobile.png" media="(max-width:767px)">
+                    <img src="img/homepage/draccoverdesktop.png" class="draccover" alt="My Image">
+                  </picture>
+              </a>
             </div> <!-- end of the first column -->
             <div class="col-md-6 col-lg-5"> <!-- open second column (used for text) -->
-              <h3>DRAC</h3>
+              <a href="drac.html">
+                <h3>DRAC</h3>
+              </a>
               <p>
                 Low findelity prototype of a vocabulary app. DRAC enables people to learn new words in different languages.
               </p>
               <a href="drac.html">
                 Read more
-                <img src="img/homepage/arrow.svg" id="arrowforward">
+                <img src="img/homepage/arrow.svg" id="arrowforward" alt="arrowforward">
               </a>
             </div> <!-- end of the second column -->
 
@@ -1033,6 +1044,10 @@
         </div> <!-- end row that olds projects -->
       </div> <!-- close work session -->
 
+      <button onclick="topFunction()" id="arrowtop" title="Go to top">
+        <img src="img/arrowtop.svg" alt="arrowtop" class="arrowtop">
+      </button>
+
     </main>
     <footer id="contact">
       <div class="container"> <!-- open row that contains (5) row -->
@@ -1065,7 +1080,7 @@
             </li>
           </ul> <!-- close unordered list -->
         </div> <!-- close row that contains social buttons -->
-        <p>copyright MarilauraTallerini 2020</p>
+        <p>© copyright MarilauraTallerini 2020</p>
       </div> <!-- open row that contains (5) row -->
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
