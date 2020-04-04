@@ -288,7 +288,7 @@ Index page
   padding-bottom: 25px;
   border-bottom: none;
 }
-#arrowforward{
+.arrowforward{
   margin-left: 10px;
   max-width: 33px;
 }
@@ -351,7 +351,7 @@ position:relative;
 }
 .bg {
 position: absolute;
-background: #f2f8fa;
+background-color: #f2f8fa;
 width: 200px;
 height: 150px;
 z-index: -1;
@@ -864,10 +864,10 @@ Medium devices (768px or larger)
   }
   #herodrac .container.mobile > h1 {
     padding: 40px 0px 10px 0px;
-    color: #ffffff;
+    color: #212121;
   }
   #herodrac p {
-    color: #ffffff;
+    color: #212121;
   }
   .imgcolumn.drac {
   text-align: center;
