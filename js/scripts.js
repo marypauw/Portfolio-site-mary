@@ -2,8 +2,8 @@
 console.log("Hello Welcome to my portfolio site!");
 
 //alert "under construction"
-$(".alert-button").on("click", function() {
-  alert("This part of the website is under construction. Come back later!");
+$('.alert-button').on('click', function() {
+  alert('This part of the website is under construction. Come back later!');
 });
 
 //smooth scrolling
