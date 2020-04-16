@@ -331,6 +331,12 @@ Animation
 /*
 About page
 */
+.story-md {
+  display:none;
+}
+.story-sm > h2 {
+  display:none;
+}
 .col {
   margin-top: 0px;
   margin-bottom: 20px;
@@ -424,17 +430,10 @@ Testimonials
 /*
 7 seas work page
 */
-#hero7seas .container.mobile {
-  background-image: url("../img/7seas/mobile_hero.jpg");
-  background-position: center; /* Center the image */
-  background-size: cover; /* Resize the background image to cover the entire */
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
 #hero7seas .container.mobile > h1 {
-  color: #ffffff;
+  color: #212121;
   margin: 0px 0px;
-  padding: 0 0 6.5em 0;
+  padding: 15px;
 }
 .infobox {
   border-bottom: 5px solid #f2f8fa;
@@ -610,14 +609,10 @@ min-width: 70px;
 .infobox > ul > li > p {
 margin: 10px 10px 10px;
 }
-#herodrac .container.mobile {
-  background-image: url("../img/drac/mobile_hero.jpg");
-  background-position: center; /* Center the image */
-  background-size: cover; /* Resize the background image to cover the entire */
-}
+
 #herodrac .container.mobile > h1 {
 margin: 0px 0px;
-padding: 15px 0 6.5em 0;
+padding: 15px;
 }
 .imgcolumndrac {
   text-align: center;
@@ -720,8 +715,17 @@ Medium devices (768px or larger)
     padding: -5px;
     padding-left: 0px;
   }
-  .hero-about-mobile {
+  .hero-mobile {
     display: none;
+  }
+  .story-md {
+    display: block;
+  }
+  .story-sm > h2 {
+    display:inline-block;
+  }
+  .story-sm > p {
+    display:none;
   }
   #hero-about h1 {
     color: #ffffff;
@@ -770,7 +774,8 @@ Medium devices (768px or larger)
     color: #ffffff;
   }
   #hero7seas .container.mobile > h1 {
-    padding: 20px 0px 10px 0px;
+    padding: 40px 0px 10px 0px;
+    color: #ffffff;
   }
   #hero7seas .container.mobile {
     background-image:none;
@@ -932,7 +937,7 @@ Large devices (1024px or larger)
     background-size: cover;
     padding: 10px;
   }
-  .hero-about-mobile {
+  .hero-mobile {
     display: none;
   }
   #hero-about p {
@@ -1015,7 +1020,7 @@ X-large devices (1440px or larger)
     background-size: cover;
     padding: 50px;
   }
-  .hero-about-mobile {
+  .hero-mobile {
     display: none;
   }
   .row-about {
