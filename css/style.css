@@ -789,6 +789,8 @@ Medium devices (768px or larger)
   .workpage > div {
     display: block;
   }
+
+  
   .workpage > div > span {
     float: left;
     display: inline-block;
