@@ -81,11 +81,10 @@ a:visited { /* visited link */
   color: #0881A3;
 }
 a:hover, a:focus {
-  color: #0881A3;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  color: #0881A3; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
-  color: #0881A3;
+  color: #1F4E5F;
 }
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -160,7 +159,32 @@ nav > ul > li > a {
   padding: 0 15px;
   font-weight: 600;
   color: #212121 !important;
+  transition: color 2s;
+  transition: border-bottom .5s;
+  position: relative;
 }
+
+nav > ul > li > a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+  background: #0881A3;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .25s linear;
+}
+
+nav > ul > li > a:hover:before,
+nav > ul > li > a:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+  outline: unset;
+}
+
 nav > ul > li > a:visited {
   color: #212121 !important;
   text-decoration: none;
@@ -359,7 +383,7 @@ position:relative;
 position: absolute;
 background-color: #f2f8fa;
 width: 200px;
-height: 150px;
+height: 200px;
 z-index: -1;
 }
 .bg-1 {
@@ -399,6 +423,10 @@ left: 60px;
 }
 .about-arrow {
   display: none;
+}
+.skills >ul >li {
+  padding: 7px 0px 7px 0px;
+  min-width: 300px;
 }
 /*
 Testimonials
@@ -555,6 +583,7 @@ white-space: nowrap;
 .phases {
   border-bottom: 2px solid #1F4E5F;
   margin-bottom: 10px;
+  margin-right: 15px;
 }
 .projectphases {
   display: inline-block;
@@ -705,7 +734,7 @@ Medium devices (768px or larger)
   */
   #about-page h3 {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     min-height: 60px;
   }
   #hero-about {
@@ -790,7 +819,7 @@ Medium devices (768px or larger)
     display: block;
   }
 
-  
+
   .workpage > div > span {
     float: left;
     display: inline-block;
@@ -931,7 +960,7 @@ Large devices (1024px or larger)
   */
   #about-page h3 {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     min-height: 30px;
   }
   #hero-about {
@@ -951,7 +980,10 @@ Large devices (1024px or larger)
     max-width: 200px;
   }
   .container.about > p {
-    max-width: 800px;
+    max-width: 1000px;
+  }
+  .container.about > h3 {
+    text-align: center;
   }
   /*
   testimonial page
