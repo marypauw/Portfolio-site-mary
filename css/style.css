@@ -147,6 +147,9 @@ header {
   box-shadow: 2px 2px 20px 0px rgba(180, 180, 180, 0.5);
   width: 100%;
 }
+nav {
+  display: inline-block;
+}
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -163,8 +166,12 @@ nav > ul > li > a {
   transition: border-bottom .5s;
   position: relative;
 }
-
-nav > ul > li > a::before {
+.menuanimation {
+  transition: color 2s;
+  transition: border-bottom .5s;
+  position: relative;
+}
+.menuanimation::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -178,8 +185,8 @@ nav > ul > li > a::before {
   transition: .25s linear;
 }
 
-nav > ul > li > a:hover:before,
-nav > ul > li > a:focus:before {
+.menuanimation:hover:before,
+.menuanimation:focus:before {
   visibility: visible;
   transform: scaleX(1);
   outline: unset;
@@ -217,6 +224,7 @@ display: none;
 .navtoggle.responsive nav {
   padding: 0;
   text-align: right;
+  width: 100%;
 }
 .navtoggle.responsive li  {
   display: block;
@@ -236,7 +244,7 @@ display: none;
 Main
 */
 main {
-  padding-top: 96px;
+  padding-top: 75px;
 }
 /*
 Footer
