@@ -11,6 +11,16 @@
   <title>Marialaura Tallerini UX/UI Designer</title>
 </head>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168074682-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168074682-1');
+</script>
+
 <body>
 
   <header>
@@ -38,15 +48,26 @@
 
     <div id="hero" class="hero">
       <!-- open hero session -->
-      <div class="container">
-        <!-- open row that contain intro text -->
+      <div class="container col-lg-5">
+        <!-- open row that contains intro text -->
         <h1>
-          UX UI Design <span>and more</span>
+          Hi my name is Mary <span> I am a UX UI designer </span>
         </h1>
-        <h3>
-          "People ignore design that ignore people"<span>Frank Chimero</span>
-        </h3>
+        <div>
+          <h5>
+            and through my design I create a <br><span>CLEAN</span><span>EASY</span><span>USER-CENTRED</span>
+          </h5>
+        </div>
+        <div>
+          <h5>
+            experience
+          </h5>
+        </div>
       </div> <!-- close row that contain intro text -->
+      <div class="container col-lg-7"> <!-- open row that contains image -->
+        <img src="img/homepage/hero_homepage.png" alt="My Image">
+      </div> <!-- close row that contain intro text -->
+
     </div> <!-- close hero session -->
 
     <div id="work" class="container">
@@ -76,6 +97,29 @@
               Responsive weather website dedicated to all water sports enthusiasts,who want to plan a day on the water in a wise and safe way.
             </p>
             <a href="7seas.html">
+              Read more
+              <img src="img/homepage/arrow.svg" class="arrowforward" alt="arrowforward">
+            </a>
+          </div> <!-- end of the second column -->
+        </div> <!-- end section that holds (2) column project 7seas -->
+
+        <div class="row"> <!-- open row that holds (2)columns for project 7seas -->
+          <div class="col-md-6 col-lg-7"> <!-- open first column (used for image) -->
+            <a href="fitogram.html">
+              <picture>
+                <source srcset="img/homepage/fitogram.png" media="(max-width:767px)">
+                <img src="img/homepage/fitogram_cover_desktop.png" alt="My Image">
+              </picture>
+            </a>
+          </div> <!-- end of the first column -->
+          <div class="col-md-6 col-lg-5">  <!-- open second column (used for text) -->
+            <a href="fitogram.html">
+              <h3>Fitogram</h3>
+            </a>
+            <p>
+              Collaboration and support in the development of the user interface design of the software FitogramPro.
+            </p>
+            <a href="fitogram.html">
               Read more
               <img src="img/homepage/arrow.svg" class="arrowforward" alt="arrowforward">
             </a>
@@ -1036,7 +1080,7 @@
                 <path fill="#FBFDFC" d="M676.652,482.615 L698.689,482.615" />
                 <path fill="#1A232C"
                   d="M676.652,483.615 L698.689,483.615 C699.242,483.615 699.689,483.167 699.689,482.615 C699.689,482.062 699.242,481.615 698.689,481.615 L676.652,481.615 C676.1,481.615 675.652,482.062 675.652,482.615 C675.652,483.167 676.1,483.615 676.652,483.615" />
-                <path fill="#EDC655" class="sun"
+                <path fill="#EDC655" class="sun-index"
                   d="M380.124,43.03 C380.124,30.313 390.433,20.004 403.149,20.004 C415.866,20.004 426.175,30.313 426.175,43.03 C426.175,55.746 415.866,66.056 403.149,66.056 C390.433,66.056 380.124,55.746 380.124,43.03" />
                 <path fill="#1A232C"
                   d="M380.124 43.03L381.124 43.03C381.125 36.944 383.588 31.444 387.575 27.455 391.564 23.468 397.064 21.004 403.149 21.004 409.235 21.004 414.735 23.468 418.724 27.455 422.711 31.444 425.174 36.944 425.175 43.03 425.174 49.115 422.711 54.615 418.724 58.604 414.735 62.592 409.235 65.055 403.149 65.056 397.064 65.055 391.564 62.592 387.575 58.604 383.588 54.615 381.125 49.115 381.124 43.03L379.124 43.03C379.125 56.299 389.88 67.055 403.149 67.056 416.419 67.055 427.174 56.299 427.175 43.03 427.174 29.76 416.419 19.004 403.149 19.004 389.88 19.004 379.125 29.76 379.124 43.03L380.124 43.03M381.18 22.782C384.441 19.246 388.544 16.499 393.169 14.86 393.69 14.676 393.962 14.104 393.778 13.584 393.594 13.063 393.022 12.791 392.502 12.975 387.564 14.725 383.187 17.655 379.71 21.426 379.336 21.832 379.361 22.465 379.767 22.839 380.173 23.214 380.806 23.188 381.18 22.782zM400.715 13.251C401.518 13.186 402.33 13.153 403.149 13.153 407.323 13.153 411.292 14.008 414.898 15.552 415.406 15.769 415.994 15.534 416.211 15.026 416.428 14.518 416.193 13.93 415.685 13.713 411.837 12.065 407.597 11.153 403.149 11.153 402.276 11.153 401.41 11.188 400.554 11.257 400.004 11.302 399.594 11.784 399.638 12.334 399.682 12.885 400.164 13.295 400.715 13.251zM421.54 19.483C425.344 22.458 428.408 26.335 430.411 30.789 430.638 31.293 431.23 31.518 431.734 31.291 432.237 31.065 432.462 30.473 432.236 29.969 430.097 25.214 426.829 21.081 422.773 17.907 422.338 17.567 421.709 17.644 421.369 18.079 421.029 18.514 421.105 19.143 421.54 19.483zM432.634 38.177C432.891 39.756 433.025 41.377 433.025 43.03 433.025 46.344 432.487 49.528 431.492 52.504 431.317 53.028 431.6 53.595 432.124 53.77 432.648 53.945 433.214 53.662 433.389 53.138 434.451 49.961 435.025 46.561 435.025 43.03 435.025 41.269 434.882 39.54 434.607 37.855 434.518 37.31 434.004 36.94 433.459 37.029 432.914 37.118 432.545 37.632 432.634 38.177zM428.116 59.444C425.45 63.492 421.824 66.854 417.566 69.204 417.082 69.471 416.907 70.079 417.174 70.563 417.44 71.047 418.049 71.222 418.532 70.955 423.077 68.447 426.942 64.863 429.786 60.545 430.09 60.084 429.963 59.463 429.501 59.16 429.04 58.856 428.42 58.983 428.116 59.444zM410.384 72.024C408.068 72.6 405.646 72.906 403.149 72.906 400.689 72.906 398.3 72.609 396.014 72.049 395.477 71.917 394.936 72.246 394.805 72.782 394.673 73.319 395.001 73.86 395.538 73.991 397.978 74.589 400.528 74.906 403.149 74.906 405.809 74.906 408.395 74.58 410.867 73.965 411.403 73.832 411.729 73.289 411.596 72.754 411.463 72.218 410.92 71.891 410.384 72.024zM388.821 69.253C384.554 66.916 380.917 63.566 378.238 59.528 377.932 59.068 377.312 58.942 376.852 59.248 376.391 59.553 376.266 60.174 376.571 60.634 379.43 64.941 383.307 68.513 387.86 71.007 388.345 71.272 388.952 71.094 389.218 70.61 389.483 70.126 389.305 69.518 388.821 69.253zM374.839 52.6C373.824 49.597 373.274 46.379 373.273 43.03 373.274 37.989 374.52 33.246 376.721 29.083 376.979 28.595 376.793 27.99 376.305 27.732 375.816 27.473 375.211 27.66 374.953 28.148 372.604 32.59 371.273 37.658 371.273 43.03 371.273 46.599 371.861 50.034 372.944 53.241 373.121 53.764 373.689 54.045 374.212 53.868 374.735 53.691 375.016 53.124 374.839 52.6L374.839 52.6z" />
@@ -1058,7 +1102,7 @@
             <p>
               This is an example of a SVG image which is animated using keyframes
             </p>
-            <a class="alert-button">
+            <a href="cssanimations.html">
               Read more
               <img src="img/homepage/arrow.svg" class="arrowforward" alt="arrowforward">
             </a>

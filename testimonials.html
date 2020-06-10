@@ -9,6 +9,17 @@
     <script src="https://kit.fontawesome.com/281c94b7d1.js" crossorigin="anonymous"></script>
     <title>Marialaura Tallerini Testimonials</title>
   </head>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168074682-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168074682-1');
+</script>
+
   <body>
 
     <header>
@@ -18,11 +29,12 @@
             <img src="img/logo.svg" alt="Marialaurtallerini" class="logo">
           </a>
           <nav>
-            <ul class="navigation"> <!-- open unordered list -->
-              <li><a href="index.html">Work</a></li>
-              <li><a href="about.html">About me</a></li>
-              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
+            <ul class="navigation">
+              <!-- open unordered list -->
+              <li><a href="index.html" class="menuanimation">Work</a></li>
+              <li><a href="about.html" class="menuanimation">About me</a></li>
+              <li><a href="#contact" onclick="menuToggle()" class="menuanimation">Contact</a></li>
+              <li><a href="testimonials.html" class="menuanimation">Testimonials</a></li>
               <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
             </ul> <!-- close unordered list -->
           </nav>

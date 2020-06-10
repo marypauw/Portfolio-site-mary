@@ -63,6 +63,10 @@ h4 {
   font-weight: 600;
   text-transform: uppercase;
 }
+h5 {
+  font-size: 1.12em;
+  font-weight: 400;
+}
 
 /*
 Images styling
@@ -115,6 +119,7 @@ a:active { /* selected link */
 }
 
 .button.secondary {
+  display: inline-block;
   background-color: transparent;
   color: #212121 !important;
   text-transform: uppercase;
@@ -284,8 +289,9 @@ Index page
 */
 .hero h1 {
   color: #0881A3 !important;
+  text-align: left;
 }
-.hero h3 {
+.hero h5 {
   color: #212121 !important;
 }
 #hero {
@@ -295,22 +301,70 @@ Index page
   width: 100%;
 }
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: left; /* Centers text */
 }
-#hero h3 {
-  text-align: center;
-  font-weight: 600 !important;
+#hero h5 {
+  display:inline-block;
+  text-align: left;
+  margin-top: 10px;
 }
 #hero h1 span {
-  text-align: center;
+  font-size: 0.7;
+  text-align: left;
   font-weight: 400;
   display: block;
 }
-#hero h3 span {
-  padding-top: 15px;
-  text-align: center;
-  font-weight: 400;
-  display: block;
+#hero h5 span {
+  padding-top: 10px;
+  text-align: left;
+  font-weight: 600;
+  color: #fc7978;
+  display: inline-block;
+  text-transform: uppercase !important;
+  position: absolute;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+  opacity:0;
+}
+@keyframes animate
+{
+  0%
+  {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  2%
+  {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  18%
+  {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  20%
+  {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100%
+  {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+#hero h5 span:nth-child(1){
+  animation-delay: 0s;
+
+}
+#hero h5 span:nth-child(2){
+  animation-delay: 2s;
+
+}
+#hero h5 span:nth-child(3){
+  animation-delay: 4s;
+
 }
 #work .row {
   padding-bottom: 25px;
@@ -357,7 +411,7 @@ Animation
     50% {fill: #fcffad;}
     100% {fill: #f76414;}
 }
-.sun {
+.sun-index {
   animation: 4s color-change infinite alternate linear;
 }
 /*
@@ -641,7 +695,7 @@ align-items:center;
 margin-left: 0px;
 margin-bottom: 10px;
 margin-top: 10px;
-min-width: 70px;
+min-width: 120px;
 }
 .infobox > ul > li > p {
 margin: 10px 10px 10px;
@@ -667,19 +721,79 @@ padding: 15px;
   text-align: center;
   -webkit-filter: drop-shadow(2px 2px 5px #d9d9d9);
   filter: drop-shadow(2px 2px 5px #d9d9d9);
-  max-width: 110px !important;
-  margin: 0 15px;
+  min-height: 198px !important;
+  margin-bottom: 20px;
 }
 .drac2 {
   text-align: center;
   -webkit-filter: drop-shadow(2px 2px 5px #d9d9d9);
   filter: drop-shadow(2px 2px 5px #d9d9d9);
   max-width: 160px !important;
-  margin: 0 4px;
+  margin-top: 20px;
 }
 .coloredbg {
   background-color: #f2f8fa;
   margin-bottom: 0px;
+}
+/*
+fitogram work page
+*/
+.fitomobile {
+  display: none;
+}
+.fitoapp {
+  min-width: 190px;
+  margin-top: 30px;
+}
+.fitoappnone {
+  display: none;
+}
+/*
+CSS animations work page
+*/
+.illustration svg {
+  max-width: 340px;
+  max-height: 340px;
+  margin-top: 60px;
+}
+@keyframes swan-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.swan {
+  animation: 10s swan-move infinite alternate linear;
+}
+@keyframes color-change-sun {
+    0% {fill: #edc655;}
+    50% {fill: #de7119;}
+    100% {fill: #fcf7bb;}
+}
+.sun {
+  animation: 4s color-change-sun infinite alternate linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.cloud-vancouver-front {
+  animation: 8s cloud-move infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+.cloud-vancouver-back {
+  animation: 8s cloud-move-reverse infinite alternate linear;
+}
+@keyframes color-change-mountain {
+    0% {fill: #b49c73;}
+    50% {fill: #eaac9d;}
+    100% {fill: #eae7d9;}
+}
+.mountain {
+  animation: 4s color-change-mountain infinite alternate linear;
+}
+
 }
 /* ==============================
 Small devices (620px or larger)
@@ -889,7 +1003,7 @@ Medium devices (768px or larger)
   }
   .infobox > ul > li > span {
   margin: 10px 10px;
-  min-width: 100px;
+  min-width: 140px;
   }
   .infobox > ul > li > p {
   margin: 10px 10px;
@@ -921,7 +1035,17 @@ Medium devices (768px or larger)
   display: flex;
   justify-content: space-around;
   }
-  .workpage.coloredbg.finaldrac {
+
+  .col-md-4 {
+  width: 33.33%;
+  }
+  .col-md-8 {
+  width: 33.33%;
+  }
+  .col-md-12 {
+  width: 33.33%;
+  }
+  .workpage.finaldrac {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -930,6 +1054,72 @@ Medium devices (768px or larger)
   }
   .screens.drac {
   margin: 15px !important;
+  }
+
+/*
+fitogram work page
+*/
+  .col-md-3 {
+  width: 25%;
+  }
+  #herofitogram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../img/fitogram/hero_fitogram_md.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire */
+  }
+  #herofitogram .container.mobile {
+    background-image:none;
+  }
+  #herofitogram .container {
+    margin-left: 40px;
+  }
+
+  #herofitogram .container.mobile > h1 {
+    padding: 50px 0px 10px 0px;
+    color: #ffffff;
+    text-align: left;
+    margin: 0px 0px;
+  }
+  #herofitogram .container > p {
+    color: #ffffff;
+    text-align: center;
+    max-width: 600px;
+    padding-bottom: 20px;
+  }
+  .screensfito {
+    text-align: center;
+    -webkit-filter: drop-shadow(2px 2px 5px #d9d9d9);
+    filter: drop-shadow(2px 2px 5px #d9d9d9);
+    margin: 0 3px;
+  }
+  .fitomobile {
+    display: inline-block;
+    max-width: 70px;
+    margin-left: 40px;
+  }
+  .fitoipad {
+    min-width: 200px;
+    margin-right: 10px;
+  }
+  .buttonrow {
+    text-align: center;
+    margin: 80px;
+    margin-bottom: 50px;
+  }
+  .fitogram_images {
+    display:inline-block;
+    text-align: center;
+  }
+  .phases-fitogram {
+    display: inline-block;
+    text-align: center;
+  }
+  .fitoappnone {
+    display: inline-block;
   }
 }
 /* ==============================
@@ -1049,11 +1239,23 @@ Large devices (1024px or larger)
   align-items: center;
   justify-content: space-around;
   }
+  /*
+  fitogram work page
+  */
+  #herofitogram .container > p {
+    text-align: left;
+  }
+  .fitomobile {
+    max-width: 80px;
+  }
+  .fitoipad {
+    min-width: 200px;
+  }
 }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1389px) {
   /*
   about page
   */
@@ -1073,5 +1275,14 @@ X-large devices (1440px or larger)
   */
   .screens-drac {
     max-width: 200px;
+  }
+  /*
+  fitogram work page
+  */
+  #herofitogram .container > p {
+    max-width:760px;
+  }
+  .fitomobile {
+    max-width: 93px;
   }
 }
