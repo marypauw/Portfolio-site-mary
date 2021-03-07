@@ -300,6 +300,13 @@ Index page
   display: inline-block;
   width: 100%;
 }
+#hero-pages {
+  padding: 20px 20px;
+  display:inline-block;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
 #hero h1 {
   text-align: left; /* Centers text */
 }
