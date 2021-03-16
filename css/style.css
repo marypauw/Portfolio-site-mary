@@ -5,7 +5,14 @@ Secondary Color (Dark): #1F4E5F;
 Black Color: #212121
 */
 /* Layout styling */
-
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+  }
+  .buttonrow a {
+    margin: 0px auto;
+    display: block;
+}
 .container {
   padding: 0 15px;
 }
@@ -119,14 +126,13 @@ a:active { /* selected link */
 }
 
 .button.secondary {
-  display: inline-block;
   background-color: transparent;
   color: #212121 !important;
   text-transform: uppercase;
   border: 2px solid #212121;
   padding: 10px 10px;
-  width: 100%;
-  max-width: 270px;
+  width: 270px;
+  text-align: center;
 }
 .button.secondary:visited {
   background-color: transparent;
@@ -745,9 +751,7 @@ padding: 15px;
 /*
 fitogram work page
 */
-.fitomobile {
-  display: none;
-}
+
 .fitoapp {
   min-width: 190px;
   margin-top: 30px;
@@ -844,7 +848,7 @@ Medium devices (768px or larger)
   padding: 10px;
   }
   .col-md-6 {
-  width: 50%;
+  width: 50%!important;
   }
   /*
   Main
@@ -1069,6 +1073,9 @@ fitogram work page
   .col-md-3 {
   width: 25%;
   }
+  .col-md-9{
+    width: 75%;
+  }
   #herofitogram {
     display: flex;
     flex-direction: column;
@@ -1103,18 +1110,10 @@ fitogram work page
     filter: drop-shadow(2px 2px 5px #d9d9d9);
     margin: 0 3px;
   }
-  .fitomobile {
-    display: inline-block;
-    max-width: 70px;
-    margin-left: 40px;
-  }
-  .fitoipad {
-    min-width: 200px;
-    margin-right: 10px;
-  }
+
+
   .buttonrow {
     text-align: center;
-    margin: 80px;
     margin-bottom: 50px;
   }
   .fitogram_images {
@@ -1135,10 +1134,6 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
   body {
     font-size: 18px; /* Sets the font size to 18px */
-  }
-  [class*="col-"] {
-  float: left;
-  padding: 10px;
   }
   .col-lg-7 {
   width: 58.33%;
@@ -1252,12 +1247,7 @@ Large devices (1024px or larger)
   #herofitogram .container > p {
     text-align: left;
   }
-  .fitomobile {
-    max-width: 80px;
-  }
-  .fitoipad {
-    min-width: 200px;
-  }
+
 }
 /* ==============================
 X-large devices (1440px or larger)
@@ -1298,7 +1288,27 @@ X-large devices (1440px or larger)
   #herofitogram .container > p {
     max-width:760px;
   }
-  .fitomobile {
-    max-width: 93px;
+}
+
+.img-fito img {
+  padding: 0px;
+  margin: 0px auto;
+  max-width: max-content;
+}
+.fitomobile {
+  margin-top: 33px!important;
+  width: 100%;
+}
+
+.col-12 {
+  width: 100%;
   }
+  .col-6 {
+    width: 50%;
+    }
+.col-3 {
+width: 25%;
+}
+.col-9{
+  width: 75%;
 }
