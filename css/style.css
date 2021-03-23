@@ -794,7 +794,7 @@ Testimonials
 
 
 .prototyperow {
-  margin: 15px 0; /* 25px top and bottom, 0 left and right */
+  margin: 40px 0;
   text-align: center;
 }
 
@@ -1180,12 +1180,6 @@ Medium devices (768px or larger)
     display: table;
   }
 
-  .workpage > div {
-    display: block;
-  }
-
-
-
   .workpage > div > span {
     float: left;
     display: inline-block;
@@ -1200,7 +1194,7 @@ Medium devices (768px or larger)
     padding-left: 22px;
   }
 
-  .workpage > div > p {
+  .workpage > div > p, ul, h5 {
     margin-top: 0px;
     text-align: left;
     padding-left: 120px;
@@ -1787,6 +1781,16 @@ X-large devices (1440px or larger)
   width: 80%;
 }
 
+.low-fidelity-images {
+  display: flex;
+  justify-content: center;
+}
+
+.low-fidelity-image {
+  display: flex;
+  margin: 0 30px;
+  justify-content: center;
+}
 
 /* Media  */
 
@@ -1801,6 +1805,9 @@ X-large devices (1440px or larger)
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .low-fidelity-images {
+    flex-direction: column;
   }
 }
 
