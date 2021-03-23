@@ -538,9 +538,7 @@ Testimonials
   margin: 0px 0px;
   padding: 15px;
 }
-.infobox {
-  border-bottom: 5px solid #f2f8fa;
-}
+
 .infobox > ul {
   list-style-type: none;
   padding: 0;
@@ -562,14 +560,22 @@ Testimonials
   margin-top: 30px;
   margin-bottom: 15px;
 }
+
+.projectphases p {
+  font-size: 18px;
+  font-family: GillSans;
+  line-height: 21px;
+  color: #8E8E8E;
+}
 .projectphases > div > a {
   background-color: transparent;
-  color: #212121 !important;
-  font-size: 1.62em !important;
-  font-weight: 600 !important;
+  font-family: GillSans;
+  font-size: 36px;
+  line-height: 42px;  
+  color: #4D4D4D;
   padding: 10px;
-  border-radius: 3px;
   border: 1px solid #0881A3;
+  border-radius: 3px;
 }
 .projectphases > div > a:hover {
   color: #ffffff !important;
@@ -580,6 +586,7 @@ Testimonials
   text-transform: uppercase !important;
   font-weight: 600 !important;
   margin-bottom: 15px;
+  color: #0881A3;
 }
 .projectphaseslink > a:hover {
   color: #ffffff;
@@ -656,7 +663,7 @@ white-space: nowrap;
   text-decoration: none;
 }
 .phases {
-  border-bottom: 2px solid #1F4E5F;
+  border-bottom: 2px solid #0881A3;
   margin-bottom: 10px;
   margin-right: 15px;
 }
@@ -805,7 +812,10 @@ CSS animations work page
   animation: 4s color-change-mountain infinite alternate linear;
 }
 
+.discover-wrapper .workpage .example-img .green-arrow {
+  display: none;
 }
+
 /* ==============================
 Small devices (620px or larger)
 ================================= */
@@ -813,7 +823,9 @@ Small devices (620px or larger)
   /*
   work page
   */
+  
 }
+
 /* ==============================
 Medium devices (768px or larger)
 ================================= */
@@ -956,22 +968,31 @@ Medium devices (768px or larger)
   .workpage > div > span {
     float: left;
     display: inline-block;
-    font-size: 35px !important;
+    font-size: 35px;
   }
   .workpage > div > h3 {
     display: inline-block;
     margin: 0px 0px;
     padding-top: 15px;
     padding-bottom: 15px;
-    padding-left: 15px;
+    padding-left: 22px;
   }
   .workpage > div > p {
     margin-top: 0px;
     text-align: left;
-    padding-left: 55px;
+    padding-left: 120px;
+    font-family: Gill Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    color: #212121;
   }
+  
   .workpage-img {
     max-width: 375px;
+    max-height: 195px;
   }
   .img {
     max-width: 600px;
@@ -1127,6 +1148,15 @@ fitogram work page
   .fitoappnone {
     display: inline-block;
   }
+
+  .discover-wrapper .workpage .example-img {
+    height: unset;
+    display: flex;
+  }
+
+  .discover-wrapper .workpage .green-arrow {
+    display: none;
+  }
 }
 /* ==============================
 Large devices (1024px or larger)
@@ -1135,105 +1165,129 @@ Large devices (1024px or larger)
   body {
     font-size: 18px; /* Sets the font size to 18px */
   }
+
   .col-lg-7 {
   width: 58.33%;
   }
+
   .col-lg-5 {
   width: 41.66%;
   }
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
   /*
   index page
   */
+
   .drac {
     text-align: center;
   }
+
   .draccover {
     max-width: 280px;
   }
+
   /*
   about page
   */
+
   #about-page h3 {
     margin-top: 0;
     margin-bottom: 40px;
     min-height: 30px;
   }
+
   #hero-about {
     background-image: url("../img/aboutme/headerme_desktop_lg.jpg");
     background-size: cover;
     padding: 10px;
   }
+
   .hero-mobile {
     display: none;
   }
+
   #hero-about p {
     max-width: 600px;
   }
+
   .about-arrow {
     display: block !important;
     max-height: 200px;
     max-width: 200px;
   }
+
   .container.about > p {
     max-width: 1000px;
   }
+
   .container.about > h3 {
     text-align: center;
   }
+
   /*
   testimonial page
   */
+
   .column.t1 {
   max-width: 600px;
   padding-right: 50px;
   }
+
   .column.t2 {
   max-width: 600px;
   }
+
   /*
   7seas workpage
   */
+
   #hero7seas div {
   max-width: 850px;
   text-align: center;
   }
+
   #hero7seas .container.mobile {
     background-image:none;
   }
+
   .workpage-img {
     max-width: 500px;
+    max-height: 295px;
   }
+
   .screens {
     max-width: 135px;
   }
+
   .img {
     max-width: 800px;
   }
+
   .workpage.screen-row {
     text-align: center;
   }
+
   .workpage > div > p {
     margin-top: 0px;
     text-align: left;
-    padding-left: 55px;
+    padding-left: 120px;
     max-width: 900px;
   }
+
   /*
   drac work page
   */
+
   #herodrac div {
   max-width: 850px;
   text-align: center;
   padding-bottom: 20px;
   }
+
   .scrollmenu.dracscroll {
   text-align: center;
   }
+  
   .workpage.coloredbg.finaldrac {
   display: flex;
   flex-direction: row;
@@ -1241,50 +1295,72 @@ Large devices (1024px or larger)
   align-items: center;
   justify-content: space-around;
   }
+
   /*
   fitogram work page
   */
+
   #herofitogram .container > p {
     text-align: left;
+  }
+
+  .discover-wrapper .workpage .example-img {
+    height: 500px;
+    display: flex;
+  }
+
+  .green-arrow {
+    display: flex;
   }
 
 }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
+
 @media only screen and (min-width: 1389px) {
   /*
  index page
   */
+
   .intro {
     padding-left: 30px;
   }
+
   header {
     padding: 10px 30px 10px;
   }
+  
   /*
   about page
   */
+
   #hero-about {
     background-image: url("../img/aboutme/headerme_desktop_xl.jpg");
     background-size: cover;
     padding: 50px;
   }
+
   .hero-mobile {
     display: none;
   }
+
   .row-about {
     padding-top: 10px;
   }
+
   /*
   drac work page
   */
+
   .screens-drac {
     max-width: 200px;
   }
+
   /*
   fitogram work page
   */
+
   #herofitogram .container > p {
     max-width:760px;
   }
@@ -1295,6 +1371,7 @@ X-large devices (1440px or larger)
   margin: 0px auto;
   max-width: max-content;
 }
+
 .fitomobile {
   margin-top: 33px!important;
   width: 100%;
@@ -1302,13 +1379,169 @@ X-large devices (1440px or larger)
 
 .col-12 {
   width: 100%;
-  }
-  .col-6 {
-    width: 50%;
-    }
-.col-3 {
-width: 25%;
 }
+
+.col-6 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
 .col-9{
   width: 75%;
+}
+
+
+
+/* Adams styling */
+
+.overview {
+  margin: 50px 0 0 50px;
+}
+
+.overview h1 {
+  font-size: 36px;
+  color: #383E41;
+  font-weight: 700;
+}
+
+.overview p {
+  font-family: Gill Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.overview-info .container {
+  margin: 0 50px;
+}
+
+.overview-info .infobox ul {
+  margin: 0;
+  font-weight: 400;
+}
+
+.overview-info .infobox span {
+  margin: 5px 10px;
+  min-width: unset;
+}
+.overview-info .infobox p {
+  color: #8E8E8E;
+  margin: 5px 10px;
+}
+
+.phases-wrapper .container{
+  margin: 60px 0 40px 50px;
+}
+
+.discover-wrapper .container {
+  margin: 0;
+}
+
+.discover-wrapper b {
+  font-weight: 600;
+}
+
+.discover-wrapper .container .workpage {
+  padding: 10px 50px;
+}
+
+.discover-wrapper .workpage  h2 {
+  font-family: GillSans;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 1.27778px;
+  color: #1F4E5F;
+}
+
+.discover-wrapper .section-marker {
+  font-family: GillSans;
+  font-size: 90px;
+  line-height: 105px;
+  color: #1F4E5F;
+}
+
+ .green-arrow {
+  display: none;
+}
+
+.button.secondary.site-link {
+  font-family: Gill Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 40px;
+  color: #212121;
+  width: 320px;
+  height: 65px;
+  border: 1px solid #1E1E21;
+  border-radius: 3px;
+}
+
+.drawn-icons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.drawn-icon {
+  width: 40%;
+}
+
+.drawn-icon img {
+  width: 80%;
+}
+
+.video-wrapper {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-wrapper .video {
+  display: flex;
+  justify-content: center;
+}
+
+/* Media  */
+
+@media (min-width: 425px) {
+  .video-wrapper iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+@media (max-width: 767px) {
+  .video iframe {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .video-wrapper {
+    flex-direction: column;
+  }
+
+  .drawn-icons {
+    flex-direction: column;
+  }
+
+  .drawn-icon {
+    width: unset;
+  }
+
+  .drawn-icon img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .video-wrapper {
+    flex-direction: column;
+  }
 }
