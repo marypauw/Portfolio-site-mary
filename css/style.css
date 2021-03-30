@@ -742,6 +742,10 @@ Testimonials
   margin: 0px -15px;
   padding-top: 20px;
 }
+.row.workpage.coloredbg.screen-row .row, .row.workpage.screen-row .row {
+    padding-top: 0px;
+}  
+   
 
 .workpage {
   margin-top: 0px; /* 30px top and bottom, 0 left and right */
@@ -1323,7 +1327,6 @@ Medium devices (768px or larger)
   }
 
   .imgcolumn {
-  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1761,7 +1764,7 @@ X-large devices (1440px or larger)
   line-height: 40px;
   color: #212121;
   width: 320px;
-  height: 65px;
+  height: auto;
   border: 1px solid #1E1E21;
   border-radius: 3px;
 }
@@ -1879,7 +1882,20 @@ X-large devices (1440px or larger)
     flex-direction: column;
   }
 }
+@media (max-width: 599px) {
+  .col-xs-6 {
+    width: 50%!important;
+  }
+  .button{
+    max-width: 200px;
+  }
+}
 
+@media (max-width: 767px) {
+  .screens.sevensee {
+     max-width: initial; 
+  }
+}
 @media (min-width: 600px) and (max-width: 767px){
   .col-sm-6{
       width: 50%!important;
