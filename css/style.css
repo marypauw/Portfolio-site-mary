@@ -407,7 +407,21 @@ Index page
   animation: animate 6s linear infinite;
   opacity:0;
 }
+.col-12 {
+  width: 100%;
+}
 
+.col-6 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-9{
+  width: 75%;
+}
 @keyframes animate
 {
   0%
@@ -1337,9 +1351,17 @@ Medium devices (768px or larger)
   .col-md-4 {
   width: 33.33%;
   }
-
+  .col-md-5 {
+    width: 41.666667%;
+    }
+    .col-md-2 {
+      width: 16.666667%;
+      }
   .col-md-8 {
   width: 33.33%;
+  }
+  .col-md-8-2 {
+  width: 66.666667%;
   }
 
   .col-md-12 {
@@ -1663,21 +1685,7 @@ X-large devices (1440px or larger)
   width: 100%;
 }
 
-.col-12 {
-  width: 100%;
-}
 
-.col-6 {
-  width: 50%;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col-9{
-  width: 75%;
-}
 
 
 /* Adams styling */
