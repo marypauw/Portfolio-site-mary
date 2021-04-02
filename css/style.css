@@ -1631,7 +1631,7 @@ X-large devices (1440px or larger)
   }
 
   header {
-    padding: 10px 30px 10px;
+    padding: 10px 15px 10px 30px;
   }
 
   
@@ -1689,6 +1689,15 @@ X-large devices (1440px or larger)
 
 
 /* Adams styling */
+
+header .container {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+header .container ul {
+  text-align: right;
+}
 
 .overview {
   margin: 50px 0 0 50px;
@@ -1835,6 +1844,23 @@ X-large devices (1440px or larger)
   }
 }
 @media (max-width: 425px) {
+
+  .overview {
+    margin: 50px 0 0 0;
+  }
+
+  .overview-info .container {
+    margin: 0;
+  }
+
+  .phases-wrapper .container {
+    margin: 60px 0 40px 0;
+  }
+
+  .discover-wrapper .container .workpage {
+    padding: 10px 20px;
+  }
+
   .imgcolumn {
     display: flex;
     flex-direction: column;
@@ -1887,7 +1913,7 @@ X-large devices (1440px or larger)
 
 @media (min-width: 769px) {
   .video-wrapper {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 @media (max-width: 599px) {
