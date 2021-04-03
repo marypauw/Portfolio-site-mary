@@ -365,13 +365,15 @@ Index page
 }
 
 .hero {
-  background-color: rgba(8, 129, 163, 0.05);
+  background-color: #f2f8fa;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
 }
 
-#hero-pages {
+
+
+#abpages {
   display:inline-block;
   justify-content: center;
   margin: auto;
@@ -682,6 +684,22 @@ Testimonials
 /*
 7 seas work page
 */
+
+.hero-works {
+  padding-top: 30px;
+  display: inline-block;
+  width: 100%;
+}
+
+.hero-works h1 {
+  color: #0881A3 !important;
+  text-align: left;
+}
+.hero-works .container.mobile > p {
+  color: #212121 !important;
+  text-align: left;
+}
+
 #hero7seas .container.mobile > h1 {
   color: #212121;
   margin: 0px 0px;
@@ -849,6 +867,11 @@ white-space: nowrap;
   text-align: center;
   padding: 10px 0px;
   text-decoration: none;
+}
+
+.scrollmenu > projectphaseslink {
+  display: inline-block;
+  text-align: center;
 }
 
 .phases {
@@ -1136,6 +1159,15 @@ Medium devices (768px or larger)
     padding: -5px;
     padding-left: 0px;
   }
+
+  .index-img {
+    background-image: url('../img/index/idex_headerme_desktop_lg.png')!important;
+  }
+
+  .kyp-img {
+    background-image: url('../img/kypai/headerkyp_desktop_lg.png')!important;
+  }
+
 
   .hero-mobile {
     display: none;
@@ -1503,7 +1535,7 @@ Large devices (1024px or larger)
   #hero-about {
     background-image: url("../img/aboutme/headerme_desktop_lg.jpg");
     background-size: cover;
-    padding: 40px;
+    padding: 0px;
   }
 
   .hero-mobile {
@@ -1647,11 +1679,17 @@ X-large devices (1440px or larger)
   #hero-about {
     background-image: url("../img/aboutme/headerme_desktop_xl.jpg");
     background-size: cover;
-    padding: 50px;
+    min-height: 400px;
   }
   .index-img {
     background-image: url('../img/index/idex_headerme_desktop_xl.png')!important;
   }
+
+  .kyp-img {
+    background-image: url('../img/kypai/headerkyp_desktop_xl.png')!important;
+    background-size: cover;
+  }
+
   .hero-mobile {
     display: none;
   }
@@ -1707,7 +1745,9 @@ header .container ul {
 }
 
 .overview {
-  margin: 50px 0 0 50px;
+  margin: 20px 0px 0px 20px;
+  width: 100%;
+  min-height: 600px;
 }
 
 .overview h1 {
@@ -1727,7 +1767,8 @@ header .container ul {
 }
 
 .overview-info .container {
-  margin: 0 50px;
+  margin: 0 10px;
+  width: 100%;
 }
 
 .overview-info .infobox ul {
@@ -1736,17 +1777,13 @@ header .container ul {
 }
 
 .overview-info .infobox span {
-  margin: 5px 10px;
-  min-width: unset;
+  margin: 5px 0px;
+  min-width: 72px;
 }
 
 .overview-info .infobox p {
   color: #8E8E8E;
   margin: 5px 10px;
-}
-
-.phases-wrapper .container{
-  margin: 60px 0 40px 50px;
 }
 
 .discover-wrapper .container {
@@ -1860,9 +1897,6 @@ header .container ul {
     margin: 0;
   }
 
-  .phases-wrapper .container {
-    margin: 60px 0 40px 0;
-  }
 
   .discover-wrapper .container .workpage {
     padding: 10px 20px;
@@ -1921,6 +1955,10 @@ header .container ul {
 @media (min-width: 769px) {
   .video-wrapper {
     flex-direction: row;
+  }
+  .overview-info .infobox span {
+    margin: 5px 10px;
+    min-width: 72px;
   }
 }
 @media (max-width: 599px) {
