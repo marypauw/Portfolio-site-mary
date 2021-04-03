@@ -1106,7 +1106,7 @@ Medium devices (768px or larger)
   Main
   */
   main {
-    padding-top: 85px;
+    padding-top: 75px;
   }
 
   .container {
@@ -1503,6 +1503,7 @@ Large devices (1024px or larger)
   #hero-about {
     background-image: url("../img/aboutme/headerme_desktop_lg.jpg");
     background-size: cover;
+    padding: 40px;
   }
 
   .hero-mobile {
@@ -1640,7 +1641,9 @@ X-large devices (1440px or larger)
   /*
   about page
   */
-
+  main {
+      padding-top: 85px;
+  }
   #hero-about {
     background-image: url("../img/aboutme/headerme_desktop_xl.jpg");
     background-size: cover;
