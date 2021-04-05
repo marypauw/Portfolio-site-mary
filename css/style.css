@@ -312,6 +312,17 @@ main {
   padding-top: 75px;
 }
 
+.highlight {
+  background: #ffffff;
+  position: relative;
+  background-origin: 0;
+  background-size: 200% 100%;
+  background-repeat: repeat-x;
+  background-position: -100% 100%;
+  transition: background-position 1s ease-out;
+}
+
+
 /*
 Footer
 */
