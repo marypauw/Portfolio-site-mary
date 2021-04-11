@@ -562,6 +562,10 @@ Animation
 /*
 About page
 */
+#hero-about h1 {
+  padding-top: 20px;
+}
+
 .story-md {
   display:none;
 }
