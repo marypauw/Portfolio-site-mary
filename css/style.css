@@ -846,6 +846,10 @@ Testimonials
   margin-top: 15px;
 }
 
+.hp-solution {
+  min-width: 320px;
+}
+
 .workpage-img.prot {
   display: none;
 }
@@ -1741,6 +1745,8 @@ X-large devices (1440px or larger)
   padding: 0px;
   margin: 0px auto;
   max-width: max-content;
+  -webkit-filter: drop-shadow(2px 2px 5px #d9d9d9);
+  filter: drop-shadow(2px 2px 5px #d9d9d9);
 }
 
 .fitomobile {
