@@ -314,14 +314,21 @@ main {
 }
 
 .highlight {
-  background-image: linear-gradient(to right, transparent 50%, red 50%);
+  background-image: linear-gradient(to right, transparent 50%, #0881a350 50%);
   position: relative;
   background-origin: 0;
   background-size: 200% 100%;
   background-repeat: repeat-x;
   background-position: 0 100%;
-  transition: background-position 1.5s ease-out;
-  padding: 4px 0px;
+  transition: background-position 2.5s ease-out;
+  padding: 0px;
+}
+
+.highlight-description {
+  background-color:#0881a350;
+  position: relative;
+  background-size:100%;
+  padding: 0px;
 }
 
 
@@ -331,7 +338,7 @@ main {
   background-size: 200% 100%;
   background-repeat: repeat-x;
   background-position: -100% 100%;
-  transition: background-position 1.5s ease-out;
+  transition: background-position 2.5s ease-out;
 }
 
 

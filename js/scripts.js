@@ -71,7 +71,7 @@ var HighlightContainer = document.getElementsByClassName('highlight');
 
 window.addEventListener('scroll', function() {
   var scrollPosition = window.scrollY;
-  if (scrollPosition >= 200) {
+  if (scrollPosition >= 50) {
     Array.from(HighlightContainer).forEach (Element=>{Element.classList.add('show')})
   }
 } );
