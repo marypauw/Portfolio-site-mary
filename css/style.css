@@ -1875,7 +1875,7 @@ header .container ul {
   font-size: 18px;
   line-height: 40px;
   color: #212121;
-  min-width: 320px;
+  min-width: fit-content;
   height: auto;
   border: 1px solid #1E1E21;
   border-radius: 3px;
@@ -2021,7 +2021,7 @@ header .container ul {
     width: 50%!important;
   }
   .button{
-    max-width: 200px;
+    max-width: 100%;
   }
 }
 
