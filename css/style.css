@@ -129,7 +129,7 @@ a:active { /* selected link */
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #1F4E5F;
   color: #ffffff !important; /* needed to override the default link color */
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   padding: 10px;
   border-radius: 3px;
@@ -160,7 +160,7 @@ a:active { /* selected link */
   background-color: transparent;
   color: #212121 !important;
   text-transform: uppercase;
-  border: 2px solid #212121;
+  border: 1px solid #212121;
   padding: 10px 10px;
   min-width: 270px;
   text-align: center;
@@ -170,13 +170,13 @@ a:active { /* selected link */
   background-color: transparent;
   color: #212121 !important;
   text-transform: uppercase;
-  border: 2px solid #212121;
+  border: 1px solid #212121;
 }
 
 .button.secondary:hover {
   background-color: #ffffff !important;
   color: #212121 !important;
-  border: 2px solid #1F4E5F;
+  border: 1px solid #1F4E5F;
   text-decoration: none!important;
 }
 
@@ -589,7 +589,7 @@ Cards
   -webkit-justify-content: center;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .card--1 .card__img, .card--1 .card__img--hover {
