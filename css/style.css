@@ -189,7 +189,7 @@ header {
   padding: 20px 20px 15px 0px;
   position: fixed;
   z-index: 99999;
-  box-shadow: 2px 2px 20px 0px rgba(180, 180, 180, 0.5);
+  box-shadow: 2px 2px 20px 2px rgba(180, 180, 180, 0.5);
   width: 100%;
 }
 
@@ -349,7 +349,7 @@ footer {
   background-color: rgba(8, 129, 163, 0.05);
   text-align: center;
   padding: 10px 0;
-  margin-top: 30px;
+  margin-top: 100px;
   box-shadow: 2px 2px 20px 0px rgba(180, 180, 180, 0.5);
   width: 100%;
   overflow: hidden;
@@ -386,6 +386,7 @@ footer {
 /*
 Index page
 */
+
 .hero h1 {
   color: #0881A3 !important;
   text-align: left;
@@ -532,7 +533,6 @@ Index page
 .row-index h3{
   margin-top:0;
 }
-
 /*
 Animation
 */
@@ -576,6 +576,155 @@ Animation
 .sun-index {
   animation: 4s color-change infinite alternate linear;
 }
+
+/*
+Cards
+*/
+
+.cards {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.card--1 .card__img, .card--1 .card__img--hover {
+  background-image: url('../img/index/kypai_cover.jpg');
+}
+
+.card--2 .card__img, .card--2 .card__img--hover {
+  background-image: url('../img/index/homepage_cover.jpg');
+}
+
+.card--3 .card__img, .card--3 .card__img--hover {
+  background-image: url('../img/index/7seas_cover.jpg');
+}
+
+.card--4 .card__img, .card--4 .card__img--hover {
+  background-image: url('../img/index/fitogram_cover.jpg');
+}
+
+.card__like {
+  width: 18px;
+}
+
+.card__clock {
+  width: 15px;
+vertical-align: middle;
+  fill:#0881A3;
+}
+.card__time {
+  font-size: 12px;
+  color: #0881A3;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.card__clock-info {
+  float: right;
+}
+
+.card__img {
+visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 235px;
+border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+
+}
+
+.card__info-hover {
+  position: absolute;
+  padding: 16px;
+width: 100%;
+opacity: 0;
+top: 0;
+}
+
+.card__img--hover {
+transition: 0.2s all ease-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+position: absolute;
+  height: 235px;
+border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+top: 0;
+
+}
+.card {
+margin-bottom: 30px;
+transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+background-color: #fff;
+width: 100%;
+position: relative;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.card:hover {
+box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+  transform: scale(1.10, 1.10);
+}
+
+.card__info {
+z-index: 2;
+background-color: #fff;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+ padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+  font-family: 'Fira Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 500;
+color: #212121;
+}
+
+.card__title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.card__by {
+  font-size: 16px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+}
+
+.card__author {
+  font-weight: 600;
+  text-decoration: none;
+  color: #0881A3;
+}
+
+.card:hover .card__img--hover {
+  height: 100%;
+  opacity: 0.3;
+}
+
+.card:hover .card__info {
+  background-color: transparent;
+  position: relative;
+}
+
+.card:hover .card__info-hover {
+  opacity: 1;
+}
+
 
 /*
 About page
@@ -877,7 +1026,7 @@ Testimonials
   min-width: 320px;
 }
 
-.workpage-img.prot {
+.prot {
   display: none;
 }
 
@@ -1186,6 +1335,15 @@ Medium devices (768px or larger)
   .main-testimonials {
     padding-top: 100px;
   }
+  /*
+  Index
+  */
+
+  .card {
+    margin-right: 0px;
+    width: 70%;
+    margin-bottom: 30px;
+  }
 
   /*
   About page
@@ -1338,6 +1496,11 @@ Medium devices (768px or larger)
     padding: 20px;
   }
 
+  .workpage-img-7 {
+    max-width: 600px;
+    max-height: 410px;
+  }
+
   .img {
     max-width: 600px;
   }
@@ -1351,6 +1514,10 @@ Medium devices (768px or larger)
   }
 
   .workpage-img.prot {
+    display: inline-block;
+  }
+  
+  .prot {
     display: inline-block;
   }
 
@@ -1571,6 +1738,15 @@ Large devices (1024px or larger)
     max-width: 280px;
   }
 
+  .cards {
+    flex-direction: row;
+  }
+
+  .card {
+    width: 50%;
+    margin-right: 20px;
+  }
+
   /*
   about page
   */
@@ -1718,6 +1894,9 @@ X-large devices (1440px or larger)
     padding: 20px 20px 15px 20px;
   }
 
+  .card {
+    margin-right: 60px;
+  }
   
   /*
   about page
