@@ -609,6 +609,14 @@ Cards
   background-image: url('../img/index/fitogram_cover.jpg');
 }
 
+.card--5 .card__img, .card--5 .card__img--hover {
+  background-image: url('../img/index/surf_cover.jpg');
+}
+
+.card--6 .card__img, .card--6 .card__img--hover {
+  background-image: url('../img/index/tenacle_cover.jpg');
+}
+
 .card__like {
   width: 18px;
 }
@@ -974,6 +982,22 @@ Testimonials
   padding-top: 20px;
   padding: 10px 15px;
 }
+
+/* .images-double-column {
+  display:flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.images-column {
+  display:flex;
+  margin: auto;
+}
+
+.image-column {
+  margin: 10px;
+}
+*/
 
 .workpage > div > span {
   font-size: 1.62em;
