@@ -64,3 +64,15 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// Animation of background on scroll
+
+var HighlightContainer = document.getElementsByClassName('highlight');
+
+window.addEventListener('scroll', function() {
+  var scrollPosition = window.scrollY;
+  if (scrollPosition >= 30) {
+    Array.from(HighlightContainer).forEach (Element=>{Element.classList.add('show')})
+  }
+} );
+

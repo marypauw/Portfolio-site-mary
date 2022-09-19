@@ -9,6 +9,17 @@
     <script src="https://kit.fontawesome.com/281c94b7d1.js" crossorigin="anonymous"></script>
     <title>Marialaura Tallerini About me</title>
   </head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168074682-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168074682-1');
+</script>
+
   <body id="about-page">
 
     <header>
@@ -18,11 +29,12 @@
             <img src="img/logo.svg" alt="Marialaurtallerini" class="logo">
           </a>
           <nav>
-            <ul class="navigation"> <!-- open unordered list -->
-              <li><a href="index.html">Work</a></li>
-              <li><a href="about.html">About me</a></li>
-              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
+            <ul class="navigation">
+              <!-- open unordered list -->
+              <li><a href="index.html" class="menuanimation">Work</a></li>
+              <li><a href="about.html" class="menuanimation">About me</a></li>
+              <li><a href="#contact" class="menuanimation">Contact</a></li>
+              <li><a href="testimonials.html" class="menuanimation">Testimonials</a></li>
               <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
             </ul> <!-- close unordered list -->
           </nav>
@@ -33,7 +45,7 @@
     <main>
 
       <div id="hero-about"> <!-- open the row that contains page head -->
-        <div class="container mobile"> <!-- open page head -->
+        <div class="container"> <!-- open page head -->
           <h1>My name is Mary</h1>
         </div>
         <div>
@@ -41,10 +53,10 @@
         </div>
         <div class="container mobile story-md">
           <p>
-            and I am a very curious and empathetic UX/UI Designer with a passion  for art, photography and digital innovation.
+            and I am a very curious and innovation-driven UX/UI Designer.
           </p>
           <p>
-            My attraction for the digital world bring me everyday to  be more and more interested in the experience of users related to a digital product and the ability to design not only the interface of it but the experience itself.
+            My attraction to the digital world brings me every day to be more and more interested in the experience of users related to a digital product and my fulfillment at work is very often associated with transforming very complex user flows into clean, smooth, and pleasing user experience.
           </p>
         </div> <!-- close page head -->
       </div> <!-- close the row that contains page head -->
@@ -54,17 +66,23 @@
           <div class="story-sm">
             <h2>My story</h2>
             <p>
-              and I am a very curious and empathetic UX/UI Designer with a passion  for art, photography and digital innovation.
+              and I am a very curious and innovation-driven UX/UI Designer.
             </p>
             <p>
-              My attraction for the digital world bring me everyday to  be more and more interested in the experience of users related to a digital product and the ability to design not only the interface of it but the experience itself.
+              My attraction to the digital world brings me every day to be more and more interested in the experience of users related to a digital product and my fulfillment at work is very often associated with transforming very complex user flows into clean, smooth, and pleasing user experience.
             </p>
           </div>
           <p>
-            I have a background in conservation and restoration of artworks and project management  and today I work in the digital industry as User Experience and Interface Designer.
+            In my last work experiences, I specialized in the design of <span class="highlight">data visualization and data dashboards </span> but also <span class="highlight">B2C products with an e-commerce component.</span>
           </p>
           <p>
-            Coming from an artistic background I do think that creativity is a basic need for my career insights. The ability to continuously create and innovate gives great value to my personal and work-life.
+            Coming from an artistic background I do think that <span class="highlight">creativity is a basic need for my career insights.</span> I like to bring my artistic skills into the design of the interface, with simple animation and illustrations.
+          </p>
+          <p>
+            Nevertheless, I have a <span class="highlight">big passion for front-end development</span> too and I like to enrich my skills in the field every day to <span class="highlight">build a faster and cleaner collaboration with the development team.</span>
+          </p>
+          <p>
+            When I am not designing you can find me in the mountains <span class="highlight">hiking or climbing and enjoying the outdoor life</span> in Squamish.
           </p>
           </div> <!-- open description continaer -->
       </div> <!--close the row that contains description -->
@@ -74,12 +92,12 @@
               <div class="container about"> <!-- open design process container-->
                 <h2>Design Process</h2>
                 <p>
-                  If you would ever ask me, why do I like to be a UX designer I would reply because I want to be creative, for sure, but this is not the only reason. One of the most fashinating thing that I like of UX design is goign through a user-centered design process, being always ready to put my self in the users’ shoes and change my ideas and my designs when necessary. The goal is to create designs for the users, namely for people, and not for my self.
+                  If you would ever ask me, why do I like to be a UX designer I would reply because I want to be creative, for sure, but this is not the only reason. One of the most fascinating thing that I like of UX design is goign through a user-centered design process, <span class="highlight">being always ready to put myself in the users’ shoes and change my ideas and my designs when necessary.</span> The goal is to create designs for the users, namely for people, and not for myself.
                 </p>
                 <p>
                   How do I do this?
                 </p>
-                <h3>User centred design process</h3>
+                <h3>User centered design process</h3>
 
                 <div id="ucd"> <!-- open UCD-->
 
@@ -122,7 +140,7 @@
                     <div> <!-- open third row that contains (2) columns prototyping-->
                       <div class="ucdphase"> <!-- open first column-->
                         <img src="img/aboutme/prototyping.svg" alt="prototyping" class="ucdicon">
-                        <h4>prototying</h4>
+                        <h4>prototyping</h4>
                       </div> <!-- close first column-->
                       <div class="ucdtask"> <!-- open second column-->
                         <h4 class="displaynone">prototyping</h4>
@@ -166,58 +184,67 @@
             </div> <!-- close the row that contains design process -->
 
       <div> <!-- open the the section that contains skills -->
-        <div class="container"> <!-- open skills container -->
-          <h2>Skills & Tools</h2>
-
+        <div class="container" style="overflow: hidden;"> <!-- open skills container -->
+            <h2 style="text-align: center;">Skills & Tools</h2>
           <div class="row"> <!-- open row for (2) columns design+prototyping-->
-            <div class="col-md-6 col skills"> <!-- open left column -->
-              <h3>Design Skills</h3>
-              <div class="bg bg-1">
-              </div>
-              <ul>
-                <li>Design Thinking</li>
-                <li>User Research</li>
-                <li>Usability Testing</li>
-                <li>Graphic Design</li>
-              </ul>
+            <div class="col-md-6 col-12 col-sm-6 col skills"> <!-- open left column -->
+                <div class="center-div">
+                    <h3>Design Skills</h3>
+                    <div class="bg bg-1">
+                    </div><br>
+                    <ul>
+                      <li>Design Thinking</li>
+                      <li>User Research</li>
+                      <li>Usability Testing</li>
+                      <li>Graphic Design</li>
+                    </ul>
+                </div>
             </div> <!-- close left column -->
-            <div class="col-md-6 col skills"> <!-- open right column -->
-              <h3>Technical Skills</h3>
-              <div class="bg bg-2">
-              </div>
-              <ul>
-                <li>Prototyping with design tools</li>
-                <li>Prototyping with Bootstrap</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-              </ul>
+            <div class="col-md-6 col-12 col-sm-6 col skills"> <!-- open right column -->
+                <div class="center-div">
+                    <h3>Technical Skills</h3>
+                    <div class="bg bg-2">
+                    </div>
+                    <br>
+                    <ul>
+                        <li>Prototyping with design tools</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div> 
             </div> <!-- close right column -->
           </div> <!-- close row for (2) columns design+prototyping-->
 
           <div class="row"> <!-- open row for (2) columns managment+Relevant -->
-            <div class="col-md-6 col skills"> <!-- open left column -->
-              <h3>Industry Tools</h3>
-              <div class="bg bg-1">
-              </div>
-              <ul>
-                <li>Adobe CC</li>
-                <li>Sketch and Sketch Cloud</li>
-                <li>Invision, Marvel, Balsamiq</li>
-                <li>Zeplin</li>
-                <li>Git Hub</li>
-              </ul>
+            <div class="col-md-6 col-12 col-sm-6 col skills"> <!-- open left column -->
+                <div class="center-div">
+                    <h3>Industry Tools</h3>
+                    <div class="bg bg-1">
+                    </div>
+                    <br>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Adobe CC</li>
+                        <li>Invision, Marvel, Balsamiq</li>
+                        <li>Sketch and Sketch Cloud</li>
+                        <li>Git Hub</li>
+                    </ul>
+                </div> 
             </div> <!-- close left column -->
-            <div class="col-md-6 col skills"> <!-- open right column -->
-              <h3>Personal skills</h3>
-              <div class="bg bg-2">
-              </div>
-              <ul>
-                <li>Empathetic</li>
-                <li>Open to changes</li>
-                <li>Detail ortiented</li>
-                <li>Self-management</li>
-              </ul>
+            <div class="col-md-6 col-12 col-sm-6 col skills"> <!-- open right column -->
+                <div class="center-div">
+                    <h3>Personal skills</h3>
+                    <div class="bg bg-2">
+                    </div>
+                    <br>
+                    <ul>
+                        <li>Empathetic</li>
+                        <li>Open to changes</li>
+                        <li>Detail oriented</li>
+                        <li>Self-management</li>
+                    </ul>
+                </div> 
             </div> <!-- close right column -->
           </div> <!-- close row for (2) columns managment+relevant -->
 
@@ -239,18 +266,18 @@
       <div class="container"> <!-- open row that contains (5) row -->
         <h2>Get in touch</h2>
         <p>
-          Do you like my work and want to discuss opportunities?<br>Please get in touch.
+          Like my work?<br>Let's Talk.
         </p>
         <div id="emailmebutton"> <!-- open row that contains email button -->
-          <a href="mailto:marialauratallerini3@gmail.com" class="button secondary">Email me</a>
+          <a href="mailto:marialauratallerini3@gmail.com" class="button secondary site-link">Email me</a>
         </div> <!-- close row that contains email button -->
         <div> <!-- open row that contains contact image -->
-          <img src="img/homepage/contactpaperplane.png" alt="contact me" class="contacting">
+          <img src="img/index/contactpaperplane.png" alt="contact me" class="contacting">
         </div> <!-- close row that contains contact image -->
         <div class="social"> <!-- open row that contains social buttons -->
-          <ul> <!-- open unordered list -->
+          <ul style="text-align: center;"> <!-- open unordered list -->
             <li>
-              <a href="https://www.linkedin.com/in/marialaura-tallerini-5a0845161/" target="_blank">
+              <a href="https://www.linkedin.com/in/marialaura-tallerini-pauw-5a0845161/" target="_blank">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
@@ -260,18 +287,13 @@
               </a>
             </li>
             <li>
-              <a href="https://www.youtube.com/channel/UC6TEuN2Usk9ktBJMbYOQJQQ?view_as=subscriber" target="_blank">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </li>
-            <li>
               <a href="https://github.com/marialtal" target="_blank">
                 <i class="fab fa-github"></i>
               </a>
             </li>
           </ul> <!-- close unordered list -->
         </div> <!-- close row that contains social buttons -->
-        <p>copyright MarilauraTallerini 2020</p>
+        <p>copyright MarialauraTallerini 2021</p>
       </div> <!-- open row that contains (5) row -->
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

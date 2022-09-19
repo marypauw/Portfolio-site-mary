@@ -9,20 +9,32 @@
     <script src="https://kit.fontawesome.com/281c94b7d1.js" crossorigin="anonymous"></script>
     <title>Marialaura Tallerini Testimonials</title>
   </head>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168074682-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168074682-1');
+</script>
+
   <body>
 
     <header>
-      <div class="container"> <!-- open header container -->
+      <div class="container"> 
         <div class="navtoggle" id="myNavtoggle">
           <a href="index.html">
             <img src="img/logo.svg" alt="Marialaurtallerini" class="logo">
           </a>
           <nav>
-            <ul class="navigation"> <!-- open unordered list -->
-              <li><a href="index.html">Work</a></li>
-              <li><a href="about.html">About me</a></li>
-              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-              <li><a href="testimonials.html">Testimonials</a></li>
+            <ul class="navigation">
+              <!-- open unordered list -->
+              <li><a href="index.html" class="menuanimation">Work</a></li>
+              <li><a href="about.html" class="menuanimation">About me</a></li>
+              <li><a href="#contact" class="menuanimation">Contact</a></li>
+              <li><a href="testimonials.html" class="menuanimation">Testimonials</a></li>
               <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
             </ul> <!-- close unordered list -->
           </nav>
@@ -36,6 +48,41 @@
         <div class="container testimonials-h1"> <!-- open testimonal container -->
           <h1>Testimonials</h1>
 
+          <div class="row testimonials"> <!-- open second row that contains (2) columns KYP.ai -->
+
+            <div class="col-12"> <!-- open second column IT -->
+              <p>
+                Mary is a highly versatile designer who works with creativity, independence and clear structure. She supported me and the rest of our (rapidly growing) team on a range of marketing projects across brand, identity, website, email, social media, video editing, and more.
+              </p>
+              <p>
+                Mary is an excellent communicator, commits time to understanding any brief and embraces new challenges.
+              </p>
+              <p class="italic">
+                Henry Hellender, Chief Marketing Officer at KYP.ai
+              </p>
+            </div> <!-- close second column IT -->
+          </div>
+
+
+          <div class="row testimonials"> <!-- open second row that contains (2) columns Chili -->
+
+            <div class="col-12"> <!-- open second column IT -->
+              <p>
+                Mary worked with us for a smaller project in one of our products in the portfolio. It was about creating the best onboarding path in very complex logic. The flow was very complicated to understand because it involved systems Mary has never interacted with (like permissions in Salesforce CRM which are notoriously hard to understand).
+              </p>
+              <p>
+                Despite the complexity in our project Mary was quick to present several potential options. She organized her figma files in a very easy to comprehend way and explain her ideas clearly. Even though she's early in her career path she has a very strong analytical ability, understands things very fast and has a very good intuition already. She had a very opinionated audience and managed to navigate the differences of opinion with tact. With her help we managed to create a very simple onboarding path for our clients for this particular product.
+              </p>
+              <p>
+                I'm sure she will do great things in her path and I think anyone will be very lucky to work with her.
+              </p>
+              <p class="italic">
+                Alina Vandenberghe, CPO & Co-Founder @Chili Piper; Co-Founder @KosmoTime
+              </p>
+            </div> <!-- close second column IT -->
+
+          </div> <!-- close second row that contains (2) columns Chili -->
+
             <div class="row testimonials"> <!-- open first row that contains (2) columns ArtHandling -->
 
               <div class="col-md-6 column t1"> <!-- open first column DE -->
@@ -43,7 +90,7 @@
                   Frau Tallerini sellt sich selbst immer neue Ansprüche und arbeitet sehr lerneifrig und ehrgeizig daras, diese zu erfüllen.
                 </p>
                 <p>
-                  Dabei zeigt sie gleichzeitig eine hohe Sozialkompetenz und eine stets positive und freundliche Art im Umgang mit Kunden und Kollegen. So war sie auch arbeitsintensiveren Zeiteneine angenehme und wertwolle Mitarbeiterin, die ihreAufgaben stets zu unserer vollsten Zufrieden erlefigte.
+                  Dabei zeigt sie gleichzeitig eine hohe Sozialkompetenz und eine stets positive und freundliche Art im Umgang mit Kunden und Kollegen.So war sie auch arbeitsintensiveren Zeiteneine angenehme und wertwolle Mitarbeiterin, die ihreAufgaben stets zu unserer vollsten Zufrieden erlefigte.
                 </p>
                 <p class="italic">
                   DART Art Handling Spedition GmbH, Köln
@@ -55,7 +102,7 @@
                   Ms Tallerini constantly sets new demands for herself, she is eager to learn and ambitious when it comes to meeting these demands.
                 </p>
                 <p>
-                  In doing so, she shows a high level of social skills, along with an ever positive and friendly nature when it comes to dealing with clients and colleagues. She was a pleasant and precious employee even at times of high levels of workload. She has always completed her tasks to our greatest satisfaction.
+                  In doing so, she shows a high level of social skills, along with an ever positive and friendly nature when it comes to dealing with clients and colleagues. She was a pleasant and precious employee even at timesof high levels of workload. She has always completed her tasks to our greatest satisfaction.
                 </p>
                 <p class="italic">
                   DART Art Handling Spedition GmbH, Köln
@@ -80,7 +127,7 @@
 
               <div class="col-md-6 column t2"> <!-- open first column EN -->
                 <p>
-                  Ms Marialaura had been able to evaluate, analysing with curiosity and attention, every problem related to work showing good autonomy and a lot of responsibility, managing in a simple and efficent way all the tasks that have been given to her.
+                  Ms Marialaura had been able to evaluate, analysing with curiosity and attention, every problem related to work showing good autonomy and a lot of responsibility, managing in a simple and efficent way all the tasks that have been given to her.
                 </p>
                 <p>
                   She has been able to carry out the role covered obtaining excellent results in every organisational and executive aspect of the business’ work.
@@ -92,33 +139,6 @@
 
             </div> <!-- close second row that contains (2) columns CBR -->
 
-            <div class="row testimonials"> <!-- open third row that contains (2) columns CM -->
-
-              <div class="col-md-6 column t1"> <!-- open first column IT -->
-                <p>
-                  Marialaura ha ottime capacità comunicative insieme a un atteggiamento positivo che le consentono di relazionarsi con successo con tutti i clienti. Inoltre, è estremamente organizzata e affidabile durante il suo lavoro quotidiano.
-                </p>
-                <p>
-                  La sua passione e disponibilità a lavorare le consentono di affrontare qualisiasi tipo di lavoro o compito organizzativo con energia.
-                </p>
-                <p class="italic">
-                  Cappun Magru, Manarola
-                </p>
-              </div> <!-- close first column IT -->
-
-              <div class="col-md-6 column t2"> <!-- open second column EN -->
-                <p>
-                  Marialaura has a proper capability in communication together with a positive attitude that allows her to have successful interactions with all customers. In addition, she is extremely organised and reliable during her daily work.
-                </p>
-                <p>
-                  Her passion and willingness to work permits her to deal with any kind of job or organisational task with energy.
-                </p>
-                <p class="italic">
-                  Cappun Magru, Manarola
-                </p>
-              </div> <!-- close second column EN -->
-
-            </div> <!-- close third row that contains (2) columns CM -->
 
         </div> <!-- close testimonal container -->
       </div> <!-- close row that contains testimonial -->
@@ -132,18 +152,18 @@
       <div class="container"> <!-- open row that contains (5) row -->
         <h2>Get in touch</h2>
         <p>
-          Do you like my work and want to discuss opportunities?<br>Please get in touch.
+          Like my work?<br>Let's Talk.
         </p>
         <div id="emailmebutton"> <!-- open row that contains email button -->
-          <a href="mailto:marialauratallerini3@gmail.com" class="button secondary">Email me</a>
+          <a href="mailto:marialauratallerini3@gmail.com" class="button secondary site-link">Email me</a>
         </div> <!-- close row that contains email button -->
         <div> <!-- open row that contains contact image -->
-          <img src="img/homepage/contactpaperplane.png" alt="contact me" class="contacting">
+          <img src="img/index/contactpaperplane.png" alt="contact me" class="contacting">
         </div> <!-- close row that contains contact image -->
         <div class="social"> <!-- open row that contains social buttons -->
-          <ul> <!-- open unordered list -->
+          <ul style="text-align: center;"> <!-- open unordered list -->
             <li>
-              <a href="https://www.linkedin.com/in/marialaura-tallerini-5a0845161/" target="_blank">
+              <a href="https://www.linkedin.com/in/marialaura-tallerini-pauw-5a0845161/" target="_blank">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
@@ -153,18 +173,13 @@
               </a>
             </li>
             <li>
-              <a href="https://www.youtube.com/channel/UC6TEuN2Usk9ktBJMbYOQJQQ?view_as=subscriber" target="_blank">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </li>
-            <li>
               <a href="https://github.com/marialtal" target="_blank">
                 <i class="fab fa-github"></i>
               </a>
             </li>
           </ul> <!-- close unordered list -->
         </div> <!-- close row that contains social buttons -->
-        <p>© copyright MarilauraTallerini 2020</p>
+        <p>© copyright MarialauraTallerini 2021</p>
       </div> <!-- open row that contains (5) row -->
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
